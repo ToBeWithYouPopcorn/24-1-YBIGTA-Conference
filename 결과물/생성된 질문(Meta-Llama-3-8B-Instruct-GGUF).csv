@@ -1,0 +1,1878 @@
+﻿제시문,질문 개수,prompt,instruction,원본,생성 질문,번역
+"(가) 공공미술은 공공장소에 설치되므로 미술관에 전시된 작품과 달리 원하지 않는 시민들에게도 노출되기 마련이다. 따라서 공공미술을 기획할 때는 대중의 미적 만족을 고려해야 한다. 일반적 취향을 벗어나 아름답기는커녕 불쾌감만 주는 작품에 공공 재정을 지출하는 것은 정당하지 않다.
+(나) 공공미술의 공공성은 그 목적에서 찾아야 한다. 누구의 심기도 건드리지 않기 위해 무난하고 의례적인 작품만 선정한다거나, 작품의 선택을 주민투표에 맡긴다면 예술을 지원할
+이유가 없다. 공공미술은 대중의 취향을 교육하고 시민에게 더 나은 삶의 가치를 전달할 기회다. 어떤 작품이 그럴 만한 것인지 판단할 수 있는 사람은 인정된 전문가들이다.
+(다) 1981년 리차드 세라는 정부의 지원을 받아 길이 36미터의 녹슨 강철판인 <기울어진
+호>를 맨해튼의 작은 광장에 설치했다. 시민의 동선을 변경하여 광장의 기능을 다시 생각하게하려는 것이 작가의 의도였다. 이 작품은 전통적인 조각처럼 관조의 대상에 머무르지 않는다. 작품에 반응하는 관람객의 행동과 이로 인해 새롭게 규정되는 공간까지 작품의 일부가
+되는 것이다. 하지만 관습에 익숙한 눈에 작품은 건축 폐기물에 불과했다. 충격과 불편함에
+시민들의 항의가 이어졌고 논란 끝에 작품은 89년에 철거되었다. 1982년 유사한 양식의 조형물이 워싱턴 국회의사당 인근에 세워졌다. 공모전에서 마야 린의<베트남 참전 용사 기념물>이 선정된 것이다. 길이 150미터의 검은 화강암 벽은 중간이 한
+번 꺾여 있을 뿐 단순했다. 작가는 기존의 전쟁기념물과 달리 전쟁이 아닌 사람을 기리겠다고 생각하여, 베트남에서 죽은 이들의 이름을 사망 연도순으로 벽에 새겨 넣었다. 전혀 영웅적이지 않다는 일부의 불만에도 불구하고, 이 조형물은 몇 년 만에 워싱턴에서 가장 많은
+사람이 방문하는 장소가 되었다. 베트남 전쟁으로 양분된 미국은 오랫동안 정치적이고 이념적인 대립을 겪었고, 그 상처는 깊었다. 작품에서 린은 이 논쟁적인 사안에 화해나 종결을
+제안하지 않았다. 참전 용사부터 반전 평화주의자까지, 입장이 다른 모든 관람객이 이곳에서
+원하는 방식으로 전쟁을 반추할 수 있었다.",3,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 3개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) Public art is installed in public places and, unlike artworks displayed in museums, is exposed to unwanted public viewing. Therefore, the aesthetic satisfaction of the public should be considered when planning public art. It is not justifiable to spend public funds on artworks that are offensive rather than beautiful because they are outside the general taste.
+(b) The public nature of public art should be found in its purpose. There is no reason to support art if it is bland and ceremonial so as not to offend anyone, or if the choice of artwork is left to a referendum.
+no reason to support it. Public art is an opportunity to educate the public's tastes and communicate the value of a better life to citizens. Recognized experts are the best people to judge which works are worthy.
+(c) In 1981, Richard Serra received government funding to create a 36-meter-long, rusted steel sheet called The Tilted
+arc, a 36-meter-long rusted steel plate, was installed in a small plaza in Manhattan. The artist's intention was to rethink the function of the plaza by altering the movement of citizens. The work does not remain an object of contemplation like a traditional sculpture. The viewer's behavior in response to the work, and the space it redefines, becomes part of the work.
+become part of the work. But to the conventionally trained eye, the work is nothing more than architectural waste. Shock and discomfort
+Public outcry ensued, and after controversy, the work was removed in 1989. In 1982, a similarly stylized sculpture was erected near the Washington Capitol. Maya Lin's Vietnam Veterans Memorial was chosen in a competition. The 150-meter-long black granite wall is simple, with a single curve in the middle.
+It was simple, with a single bend in the middle. Unlike conventional war monuments, the artist wanted to honor people, not the war, so the names of those who died in Vietnam were carved into the wall in order of the year of death. Despite some complaints that it wasn't heroic enough, the sculpture became the most visited place in Washington within a few years.
+most visited place in Washington in a few years. Divided by the Vietnam War, the United States had long been at odds politically and ideologically, and the wounds ran deep. In his work, Lin does not propose reconciliation or closure to this contentious issue.
+or closure to this contentious issue. Visitors of all persuasions, from veterans to anti-war pacifists, are invited to reflect on the war in their own way.
+could reflect on the war in any way they wanted.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","s the generated set of questions and answers:
+
+""Question 1""
+""Answer 1""
+
+What do you think are the implications of considering aesthetic satisfaction when planning public art, as stated in (a)?
+
+Please describe the public nature of public art according to (b) and how it differs from traditional artworks.
+
+Do you agree with the statement that experts should be the ones to judge what works are worthy for public display, as mentioned in (c)? Please justify your answer.
+
+How does the intention behind Richard Serra's work, The Tilted Arc, differ from traditional sculptures, according to (c)?
+
+What do you think is the significance of the controversy surrounding Maya Lin's Vietnam Veterans Memorial, and how does it relate to the idea of public art?
+
+In what ways did the design of Maya Lin's Vietnam Veterans Memorial challenge conventional war monuments, as described in (c)? Please explain.
+
+Do you think that a work of art can be considered successful if it sparks controversy, as seen with The Tilted Arc? Please support your answer with examples from both (a) and (b).
+
+How do the ideas about public art presented in (a), (b), and (c) relate to each other, particularly regarding the role of experts and the public's taste?
+
+""Question 8""
+""Answer 8""
+
+What does the controversy surrounding The Tilted Arc reveal about the relationship between art and society, according to (c)? Please explain.
+
+I hope this meets your requirements. Let me know if you need any further changes!",[],[]
+"(가) 그녀는 남성들을 비난하느라 시간을 낭비할 필요가 없다. 허용되지 않은 경험과 지식을
+갈망하느라 마음의 평화를 망칠 필요가 없다. 두려움과 증오는 거의 사라졌다. 확실히 소설가로서 높은 수준의 장점을 누리게 되었다. 폭넓고 열렬하고 자유로운 감수성을 지닌 것이다. 그녀는 거의 느껴질까 말까 한 감촉에도 반응한다. 마치 야외에 새로 심은 식물이 다가오는
+모든 풍경과 소리를 흠뻑 빨아들이듯이. 거의 알려지지 않거나 기록되지 않은 것을 아주 세심하게 또 호기심에 가득 차서 살펴본다. 사소한 것을 보듬고는 그것이 결국 사소하지 않음을 보여준다. 묻혀있던 것을 드러내어 그렇게 묻어야 했던 이유가 있었는지 돌아보게 한다. 그녀는 비록 서툴기도 하고 유명한 남성 작가를 따르는 전통의 후예도 아니지만, 가장 중요한
+교훈을 깨우쳤다. 여성으로서, 자신이 여성이라는 것을 잊어버린 여성으로서, 쓸 줄 안다.
+(나) 글을 쓰는 동기 중에는 어떤 사회를 지향할지에 대한 사람들의 생각을 바꾸려는 정치적
+욕망이 있다. 정치적 편향에서 진정으로 자유로운 글은 없다. 예술이 정치와 무관해야 한다는 의견은 그 자체가 정치적 태도이다. 평화로운 시대였으면 나는 정치적 지향을 모르고 살았을 수도 있다. 히틀러의 등장을 목격하면서 전체주의에 맞서는 작품을 써야 했다. 내가 가장 하고 싶었던 것은 정치적 글쓰기를 예술로 만드는 일이었다. 불의를 감지하는 것이 출발점이었다. 사람들이 거의 알지 못하는 중요한 사실이나 거짓을 드러내려 했고, 우선 사람들이 들어주길 바랐다. 그렇다고 해도 글쓰기가 미적 경험이 아니라면 쓸 수 없었다. 글쓰기는
+고통스러운 병마와 싸우는 것처럼 끔찍하고 고단한 투쟁이다. 자신의 개인성을 지우려 분투하지 않으면 결코 읽을 만한 글을 쓸 수 없다.",4,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 4개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+""Question 4""
+""Answer 4""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) She doesn't need to waste her time criticizing men. She doesn't have to ruin her peace of mind
+She doesn't have to ruin her peace of mind by craving unauthorized experience and knowledge. Fear and hatred have all but disappeared. Certainly, as a novelist, she enjoyed a high degree of advantage. She has a broad, ardent, unbridled sensibility. She responds to almost imperceptible touches. It's like a newly planted plant in the open air.
+soaking up all the sights and sounds. She examines the little known or unrecorded with great care and curiosity. It embraces the trivial and shows that it is not trivial after all. She brings to the surface what was buried and makes us wonder if there was ever a reason for it to be buried. She may be clumsy, and she may not be descended from a tradition of following famous male writers, but she has learned the most important lessons.
+most important lesson. As a woman, as a woman who has forgotten she is a woman, she can write.
+(b) Among my motivations for writing is a political desire to change the way people think about what kind of society we want to have.
+desire to change people's ideas about what kind of society we want. There is no writing that is truly free from political bias. The idea that art should be independent of politics is itself a political attitude. In peaceful times, I might have lived without a political orientation. Witnessing the rise of Hitler, I had to write against totalitarianism. What I wanted to do most was to make political writing an art form. Perceiving injustice was the starting point. I wanted to reveal important facts or lies that few people knew about, and I wanted people to listen first, but I couldn't do that if writing wasn't an aesthetic experience. Writing is
+is a terrible, arduous struggle, like fighting a painful disease. If you don't fight to erase your own personality, you can never write anything worth reading.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re the generated questions and answers:
+
+Question 1
+Please describe how the writer's sensibility is characterized in statement (a).
+
+Answer 1
+The writer's sensibility is described as broad, ardent, and unbridled.
+
+Question 2
+How does the writer's desire to write reflect her desire for change in statement (b)?
+
+Answer 2
+The writer's desire to write reflects her desire to change people's ideas about what kind of society they want to have.
+
+Question 3
+What is the relationship between art and politics according to the writer, as stated in both statements?
+
+Answer 3
+According to the writer, there is no writing that is truly free from political bias, and the idea that art should be independent of politics is itself a political attitude.
+
+Question 4
+Please explain how the writer's motivation for writing relates to her perception of injustice.
+
+Answer 4
+The writer's motivation for writing is rooted in perceiving injustice and wanting to reveal important facts or lies that few people know about, and she wants people to listen first.","[""Please describe how the writer's sensibility is characterized in statement (a)."", ""How does the writer's desire to write reflect her desire for change in statement (b)?"", 'What is the relationship between art and politics according to the writer, as stated in both statements?', ""Please explain how the writer's motivation for writing relates to her perception of injustice.""]","['제시문 (가)에서 작가의 감성이 어떻게 특징지어지는지 설명하세요.', '작가가 글을 쓰고자 하는 욕구가 (나)항에서 변화에 대한 욕구를 어떻게 반영하고 있습니까?', '두 진술에서 언급했듯이 작가에 따르면 예술과 정치의 관계는 무엇인가요?', '작가가 글을 쓰게 된 동기가 불공정에 대한 인식과 어떤 관련이 있는지 설명해 주세요.']"
+"(가) 정치적 자유는 어떤 사람이 다른 사람에게서 강제를 받지 않는 상태를 의미한다. 자유를 보
+장하기 위해서는 권력의 집중이 최대한 제거되어야 한다. 경제행위의 조직을 정치권력의 통제로
+부터 벗어나게 함으로써, 시장은 이러한 강제력의 원천을 제거할 수 있다. 정치인들이 공산당 지
+지 혐의가 있는 영화산업 종사자를 업계에서 퇴출시키고자 했던 ‘할리우드 블랙리스트’ 사건이
+있었다. 이 사건은 강제적인 수단을 동원해 자발적 교환을 막으려고 한 결탁이라는 점에서 자유
+를 파괴한 반자유주의적 행위였다. 블랙리스트가 지켜지지 않은 것은 바로 이를 따르는 데 큰 비
+용이 들도록 만든 시장 때문이었다. 기업을 운영하는 사람들에게는 최대한 많은 돈을 벌려는 동
+기가 있었기 때문에, 유능한 사람이라면 블랙리스트에 올랐더라도 고용할 유인이 생겼다. 블랙리
+스트에 오른 사람들은 가명으로 극본을 쓰거나 새로운 제작사를 찾아가는 등의 대안적 방식으로
+일자리를 얻을 수 있었으며, 그 결과 자유를 보호받을 수 있었다.
+(나) 자유지상주의자는 시장에서 표출될 수 있는 개인 선호의 충족을 근본적인 것으로 본다. 그러
+나 개인이 스스로 삶을 얼마나 통제할 수 있는지에 영향을 주는 요인은 이와 무관한 경우가 많
+다. 예컨대, 시장경제가 효율적으로 작동하기 위해서는 타자기 제조업처럼 불필요해진 산업에서
+컴퓨터 제작이나 소프트웨어 개발처럼 수요가 더 많은 산업으로 자원을 쉽게 움직일 수 있어야
+한다. 이러한 효율성의 대가는 변화가 생길 때 새로운 일자리를 찾아야 하는 노동자들이 치르게
+된다. 노동자들이 이러한 변화에 항시적으로 노출되어 있으면, 더 안정적인 사회에서보다 스스로
+삶을 통제할 능력이 떨어진다. 어떤 시스템이 나은지 결정하려면, 생산효율성과 개인의 삶에 대
+한 통제력이라는 상충하는 두 가치를 어떻게 조화할지 선택해야 한다. 규제되지 않는 시장은 많
+은 노동자가 삶에 대한 통제력을 상실하도록 방치한다. 이들의 자유 또한 도덕적으로 중요하다.
+",3,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 3개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) political freedom is the state in which a person is not subject to coercion by another person. To ensure freedom
+To ensure freedom, concentrations of power must be eliminated as much as possible. By freeing the organization of economic activity from the control of political power
+By freeing the organization of economic activity from the control of political power, markets can eliminate this source of coercion. When politicians are accused of supporting the Communist Party
+The ""Hollywood Blacklist,"" in which politicians sought to drive movie industry workers suspected of supporting the Communist Party out of the industry.
+the Hollywood Blacklist. This was an anti-liberty act that destroyed freedom because it was a conspiracy to use coercive means to prevent voluntary exchange.
+It was an anti-liberal act that destroyed freedom. The blacklist was not upheld because the marketplace made it very difficult to comply.
+The marketplace made it very expensive to comply. The people who ran the businesses had an incentive to make as much money as possible.
+to make as much money as possible, so they had an incentive to hire competent people, even if they were blacklisted. Blacklisted
+people were able to find work in alternative ways, such as writing scripts under pseudonyms or finding new production companies.
+such as writing scripts under pseudonyms or finding new production companies.
+(b) Libertarians view the fulfillment of individual preferences that can be expressed in the marketplace as fundamental. The
+However, factors that affect how much control individuals have over their lives are often irrelevant.
+are often irrelevant. For example, for a market economy to work efficiently, industries that have become obsolete, such as typewriter manufacturing, must be replaced by industries that are in greater demand, such as computer manufacturing or software development.
+from industries that have become obsolete, such as typewriter manufacturing, to industries that are in greater demand, such as computer manufacturing or software development.
+to industries with higher demand, such as computer manufacturing or software development. The price of this efficiency is paid by workers who must find new jobs when changes occur.
+new jobs when changes occur. When workers are constantly exposed to these changes, they are less able to control their own lives than they would be in a more stable society.
+control over their lives than they would in a more stable society. To determine which system is better, we need to weigh the conflicting tradeoffs of production efficiency and personal control over one's life.
+To decide which system is better, we must choose how to reconcile the two conflicting values of productivity efficiency and control over individual lives. Unregulated markets often
+allow workers to lose control over their lives. Their freedom is also morally important.
+
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re the generated sets of questions and answers:
+
+**Set 1**
+
+Question 1: Please describe how the concept of coercion in (a) relates to the Hollywood Blacklist mentioned in (b).
+
+Answer 1: The concept of coercion in (a) refers to the use of force or the threat of force by one person against another. In the context of the Hollywood Blacklist, this means that politicians were using coercive means to prevent individuals from engaging in voluntary exchange and making a living.
+
+Question 2: How does the idea of freedom and its relationship to coercion in (a) relate to the example given in (b)?
+
+Answer 2: The idea of freedom in (a) is compromised when people are forced to make choices based on coercive means rather than their own preferences. In the case of the Hollywood Blacklist, individuals were not able to freely choose their profession or work due to the coercive actions of politicians.
+
+Question 3: Please explain how the concept of coercion in (a) relates to the idea that people are less able to control their lives in a market economy, as mentioned in (b).
+
+Answer 3: The concept of coercion in (a) can be applied to the example given in (b), where workers may be forced to adapt to changes in the market economy and find new jobs when industries become obsolete. This loss of control over one's life is an example of how coercion can undermine individual freedom.
+
+**Set 2**
+
+Question 1: Please compare the views on individual preferences and their expression in the marketplace presented in (a) with those in (b).
+
+Answer 1: The libertarians in (a) view the fulfillment of individual preferences as fundamental, while in (b), factors such as market efficiency are seen as relevant.
+
+Question 2: How do the ideas about personal control over one's life presented in (b) relate to the concept of coercion in (a)?
+
+Answer 2: The idea that people are less able to control their lives in a market economy, as mentioned in (b), is related to the concept of coercion in (a) because individuals may be forced to adapt to changes in the market and make choices based on coercive means rather than their own preferences.
+
+Question 3: Please discuss how the conflicting values of production efficiency and personal control over one's life, mentioned in (b), relate to the ideas presented in (a).
+
+Answer 3: The conflicting values of production efficiency and personal control over one's life, as mentioned in (b), are related to the ideas presented in (a) because libertarians may prioritize individual freedom and autonomy, while market efficiency may require individuals to make choices based on coercive means.",[],[]
+"(가) 2014년 런던 지하철 노조가 부분파업을 벌였다. 이틀 동안 일부 역에서 열차가 정차하지 않았고, 이
+때문에 사람들이 새 통근 경로를 찾아야 했다. 이런 상황이 되자 사람들은 평소보다
+더 빠른 길이 있음을 알게 됐다. 일상적인 길이 막힌 후에야 새로운 길을 찾게 된 것이다. 매일
+소모하는 통근 시간을 단축하는 일이 무시할 만한 것이 아님에도, 사람들은 좀처럼 새로운 시도를 하지 않
+는다. 한 연구에 의하면 인간 행동의 47%가 습관적인 것이라고 한다.
+(나) 어떤 연구 결과에 따르면, 스마트폰을 하루에 세 시간 이상 사용하는 아동은 그렇지 않은 아동보다
+자살 충동을 느낄 확률이 30% 이상 높다. 하루에 다섯 시간 이상이면 그 확률이 50% 이상 높아진다고 한
+다. 아동은 스마트폰 과용의 위험을 잘 모르고 있다. 학교에서 스마트 폰 사용을 법적으로 금지하기로 한
+프랑스의 조치는 과하다기보다 오히려 부족한 것처럼 보인다.
+(다) 학교 교육에서 부모와 학생은 소비자이며 교사와 학교관리자는 생산자이다. 학교 교육의 국영화와 중
+앙집권화로 인해 교육 단위는 대규모화되고 소비자의 선택권은 약화되었으며 생산자의 힘은 커졌다. 교사
+와 학교관리자도 부모일 수 있으며 학교가 그들의 자녀를 훌륭한 인재로 교육해 주기를 바랄 것이다. 그러
+나 교사와 학교관리자로서 그들의 이익은 중앙집권화와 관료화를 통해 증가 될 수 있다. 소비자로서 부모
+의 이익은 그렇지 않다.
+(라) 1962년 미국은 모든 새로운 의약품은 판매 전에 효험과 안전성에 대해서 식약청의 승인을
+받아야 한다는 법을 도입하였다. 물론 모든 사람은 그들이 사용하는 약품이 안전한 것이길 원한다. 그러나
+말기 암 환자들의 경우 부작용의 위험을 감수하고서라도 실험적인 약품이나 치료법을 시도해 볼 의향을
+가지고 있다. 한 연구에 따르면 1962년 이후 미국의 신약 개발이 현저하게 감소했다고 한다.",3,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 3개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) In 2014, London Underground unions staged a partial strike. For two days, trains did not stop at some stations, forcing people to find new commuter routes.
+forcing people to find new commute routes. When this happened, people realized that there was a
+faster route than usual. It was only after the usual routes were blocked that they found new ones. Every day
+Despite the fact that reducing the amount of time people spend commuting every day is not something to be ignored, people are reluctant to try something new.
+to try something new. According to one study, 47% of human behavior is habitual.
+(b) According to one study, children who spend more than three hours a day on their smartphones are 30 percent more likely to have suicidal thoughts than those who don't.
+more than 30% more likely to have suicidal thoughts than those who do not. Five or more hours a day increases the risk by more than 50 percent.
+C. Kids don't understand the dangers of smartphone overuse. The French decision to legally ban smartphones in schools
+France's decision to legally ban smartphones in schools seems like a step too far.
+(C) In school education, parents and students are consumers, while teachers and school administrators are producers. During the nationalization and
+centralization of schooling has resulted in larger educational units, weakened consumer choice, and increased the power of producers. Teachers
+and school administrators may also be parents and want the school to educate their children to be good people. So
+However, their interests as teachers and school administrators can be increased through centralization and bureaucratization. Parents as consumers
+'s interests as consumers are not.
+(d) In 1962, the United States introduced a law that all new drugs must be approved by the Food and Drug Administration for efficacy and safety before they can be sold.
+efficacy and safety before being sold. Of course, everyone wants the drugs they use to be safe, but in the case of terminal cancer patients
+terminal cancer patients are willing to try experimental drugs or treatments, even at the risk of side effects.
+risk of side effects. According to one study, there has been a significant decline in drug development in the United States since 1962.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re three sets of questions and answers based on the new statements:
+
+**Set 1**
+
+Question 1
+Please explain how the idea that people tend to stick to habits can be applied to the situation described in statement (a).
+
+Answer 1
+The tendency for people to stick to habits, as mentioned in statement (b), can be applied to the situation in statement (a) where commuters were forced to find new routes due to a strike. People may have initially been resistant to change and stuck to their usual routes until they had no other choice.
+
+Question 2
+Please discuss the relationship between statements (c) and (d).
+
+Answer 2
+Statement (c) highlights the issue of smartphone overuse among children, while statement (d) discusses the importance of drug safety. While both topics may seem unrelated at first glance, both highlight the potential risks associated with certain behaviors (overusing smartphones or using unapproved drugs). Both statements also emphasize the need for regulation and responsible decision-making.
+
+Question 3
+Please evaluate the impact of centralization on consumer choice in education, as mentioned in statement (c).
+
+Answer 3
+Centralization in education can lead to a decrease in consumer choice, as stated in statement (c), as larger educational units may have less flexibility to cater to individual students' needs. This can result in a one-size-fits-all approach that does not account for the unique requirements of each student.
+
+**Set 2**
+
+Question 1
+Please describe how the idea of habit formation can be applied to the situation described in statement (a).
+
+Answer 1
+The concept of habit formation, mentioned in statement (b), can be applied to the commuters who initially resisted changing their daily routine but eventually found new routes after being forced to do so.
+
+Question 2
+Please compare and contrast the concerns raised in statements (c) and (d).
+
+Answer 2
+Both statements raise concerns about the potential risks associated with certain behaviors. However, while statement (c) focuses on the dangers of smartphone overuse among children, statement (d) highlights the importance of drug safety for terminal cancer patients. The two topics differ in their focus on the type of risk and the population affected.
+
+Question 3
+Please discuss how the interests of consumers and producers may conflict in education, as mentioned in statement (c).
+
+Answer 3
+In education, parents and students are consumers who want a personalized learning experience that meets their needs. However, teachers and school administrators, as producers, may have different priorities that prioritize standardized testing and bureaucratic efficiency over individualized instruction.
+
+**Set 3**
+
+Question 1
+Please describe the common theme or issue raised in statements (a) and (b).
+
+Answer 1
+Both statements raise concerns about people's reluctance to change their habits or routines. In statement (a), commuters initially resist changing their daily commute, while in statement (b), children may be reluctant to limit their smartphone use.
+
+Question 2
+Please evaluate the implications of the decline in drug development mentioned in statement (d).
+
+Answer 2
+The decline in drug development since 1962, as stated in statement (d), can have significant implications for patients who rely on new treatments and therapies. This decline may lead to a lack of innovative solutions for diseases and medical conditions.
+
+Question 3
+Please discuss how the idea of consumer choice applies to education, as mentioned in statement (c).
+
+Answer 3
+In education, students and parents are consumers who have limited choices when it comes to educational programs and resources. The centralization of schooling can further limit these choices, making it difficult for individuals to find an educational environment that meets their unique needs.","['Please explain how the idea that people tend to stick to habits can be applied to the situation described in statement (a).', 'Please discuss the relationship between statements (c) and (d).', 'Please evaluate the impact of centralization on consumer choice in education, as mentioned in statement (c).', 'Please describe how the idea of habit formation can be applied to the situation described in statement (a).', 'Please compare and contrast the concerns raised in statements (c) and (d).', 'Please discuss how the interests of consumers and producers may conflict in education, as mentioned in statement (c).', 'Please describe the common theme or issue raised in statements (a) and (b).', 'Please evaluate the implications of the decline in drug development mentioned in statement (d).', 'Please discuss how the idea of consumer choice applies to education, as mentioned in statement (c).']","['사람들이 습관을 고집하는 경향이 있다는 생각을 제시문 (가)에 묘사된 상황에 어떻게 적용할 수 있는지 설명하세요.', '제시문 (다)와 (라)의 관계에 대해 논의하세요.', '진술 (c)에 언급된 대로 중앙 집중화가 교육에서 소비자 선택에 미치는 영향을 평가해 주세요.', '제시문 (가)에 기술된 상황에 습관 형성의 개념을 어떻게 적용할 수 있는지 설명하세요.', '진술 (c)와 (d)에서 제기된 우려 사항을 비교하고 대조해 주세요.', '진술 (c)에 언급된 것처럼 교육에서 소비자와 생산자의 이해관계가 어떻게 상충할 수 있는지 논의하세요.', '제시문 (가)와 (나)에서 제기된 공통 주제 또는 문제를 설명해 주세요.', '제시문 (라)에 언급된 신약 개발 감소의 의미를 평가해 주세요.', '제시문 (c)에 언급된 대로 소비자 선택의 개념이 교육에 어떻게 적용되는지 토론하세요.']"
+"(가) 송경운(宋慶雲)은 서울 사람이다. 아홉 살에 비파를 배워 최고의 경지에 올랐고 열두세 살에
+전국에 유명해졌으며, 벼슬아치들이 그의 음악을 애호했다. 그는 정묘호란 때 전주로 피난 왔다. 전
+주는 큰 도회지이지만 민생이 어려워 관가를 제외하고는 음악을 들을 수 없었다. 그런데 송경운이
+온 뒤로 이곳 사람들 모두 음악을 좋아하게 되었다. 그의 집 앞에 인파가 몰려드는데, 손님이 찾아
+오면 그는 무슨 일을 하다가도 허겁지겁 하던 일을 놓아두고 얼른 비파를 들었다. “소인은 천한 사
+람입니다. 이처럼 귀한 분들이 찾아오는 까닭은 오로지 소인의 솜씨 때문이니, 소인이 어찌 감히
+연주를 지체하겠으며, 어찌 감히 연주에 진심을 다하지 않겠습니까?” 그러고는 반드시 곡을 다 갖
+추어 연주하여 손님 마음이 흡족해진 것을 느낀 뒤에야 연주를 마쳤다. 비록 가마를 떠메고 말을
+모는 아랫것들이 오더라도 역시 이렇게 대했다.
+(나) 최북(崔北)은 산수화를 잘 그렸으며, 독창적으로 일가를 이루었다. 일찍이 어떤 집에서 높은
+벼슬아치를 만났는데 그 사람이 최북을 가리키면서 집 주인에게 물었다. “저기 앉아 있는 사람 이
+름이 뭔가?” 최북이 얼굴을 치켜들고 말했다. “먼저 물어보자. 자네 이름이 뭔고?” 그 오만함이 이
+와 같았다. 한번은 금강산을 유람하다 구룡연에 이르러 갑자기 크게 부르짖으며 “천하의 명사(名
+士)는 천하의 명산(名山)에서 죽는 게 마땅하다!” 하고 못에 뛰어들어 거의 구하지 못할 뻔했다. 한
+귀인이 최북에게 그림을 그려 달라고 요구했으나 뜻대로 되지 않자 장차 최북을 위협하려 했다. 최
+북이 분노하여 “다른 사람이 나를 배신하는 게 아니라 내 눈이 나를 배신하는구나!” 하고 한쪽 눈을
+찔러 애꾸눈이 되었다. 어떤 이는 이렇게 평했다. “최북의 풍모가 매섭구나. 왕공귀족(王公貴族)의
+노리개가 되지 않으면 그만이지 무엇 하러 그렇게 스스로를 괴롭힌단 말인가.",5,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 5개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+""Question 4""
+""Answer 4""
+""Question 5""
+""Answer 5""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) Song Kyung-woon was born in Seoul, South Korea. He learned to play the pipa at the age of nine and reached the highest level.
+He became famous throughout the country, and his music was favored by the nobility. He fled to Jeonju during the Jeongmyoho rebellion. Jeonju
+Jeonju is a big city, but due to the difficulties of civil life, we couldn't listen to music except for kwan-ga.
+came to Jeonju, everyone here began to love music. Crowds gather in front of his house, and when guests come to visit.
+He would drop whatever he was doing and quickly pick up the pipa. ""There are only a few thousand people
+The reason why so many people come is because of his skill, so how dare he delay playing.
+""How dare you delay your performance, and how dare you not put your heart and soul into it?"" Then he finished the piece and played it to the satisfaction of the guests.
+Only when he felt that his guests were satisfied did he finish playing. Although the men who carried the palanquin and drove the horses
+Even if the horses and carts were carried, he still treated them in this way.
+(B) Choi Buk was a skilled painter of mountain paintings, and he was an ingenious family man. Once he met a high
+The man pointed to Choi Beuk and asked the owner of the house, ""What is that person sitting there?
+What's his name?"" Choi Buk raised his face and said. ""Let me ask you first. What's your name?"" The arrogance was like this.
+It was like this. Once, when he was cruising around Mount Kumgang and came to Guryongyan, he suddenly shouted out, ""The name of the heavenly master (名
+士) deserves to die on the most famous mountain in the world!"" He jumped into a nail and was almost unable to save himself. Han.
+A nobleman demanded that Choi Bu paint a picture for him, but when that didn't work out, he tried to threaten Choi Bu in the future. Choi
+Choi was enraged and said, ""It's not others who betray me, but my own eyes!"" and gouged out one eye.
+and became a squint. Someone commented ""You're a bitter man. If you don't become a puppet of the royal nobility.
+What's the point of tormenting yourself so much?
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re five sets of questions and answers based on the new statements:
+
+Question 1
+Please describe the significance of Song Kyung-woon's skill in playing the pipa.
+
+Answer 1
+His exceptional talent and mastery of the instrument made him famous throughout the country, earning him favor among the nobility.
+
+Question 2
+How did Choi Buk respond when a stranger asked about his name?
+
+Answer 2
+Choi Buk asked the stranger to introduce himself first before revealing his own name, showcasing his confidence and arrogance.
+
+Question 3
+What was Song Kyung-woon's approach to playing for his guests?
+
+Answer 3
+He would only finish playing once he felt that his guests were satisfied with his performance, demonstrating his dedication to pleasing others.
+
+Question 4
+How did Choi Buk react when a nobleman demanded a painting from him?
+
+Answer 4
+Choi Buk refused to paint the picture and instead gouged out one of his own eyes in anger, showing his strong sense of self-respect and unwillingness to compromise.
+
+Question 5
+What can be inferred about Song Kyung-woon's character based on his treatment of his guests?
+
+Answer 5
+Song Kyung-woon was a courteous and considerate individual who prioritized the satisfaction of his guests, as evident in his willingness to drop everything to play for them.","[""Please describe the significance of Song Kyung-woon's skill in playing the pipa."", 'How did Choi Buk respond when a stranger asked about his name?', ""What was Song Kyung-woon's approach to playing for his guests?"", 'How did Choi Buk react when a nobleman demanded a painting from him?', ""What can be inferred about Song Kyung-woon's character based on his treatment of his guests?""]","['송경운의 비파 연주 실력이 어떤 의미가 있는지 설명해 주세요.', '낯선 사람이 자신의 이름을 물었을 때 최북은 어떻게 대답했을까요?', '송경운은 손님들을 위해 어떤 방식으로 연주를 했나요?', '한 귀족이 그림을 요구했을 때 최북은 어떻게 반응했을까요?', '손님을 대하는 태도를 통해 송경운의 성격을 유추해볼 수 있는 것은 무엇인가요?']"
+"(가) 신에 대해 아무 의견도 갖지 않는 것이 잘못된 의견을 갖는 것보다 낫다. 전자는 불신이고
+후자는 모욕이며, 미신은 당연히 신을 모욕하는 것이다. 플루타르크가 그런 뜻으로 잘 말한 바
+있다. “나는 갓 태어난 자기 자식들을 잡아먹은 플루타르크라는 자가 있었다는 말을 듣느니 차라
+리 플루타르크라는 자가 아예 존재하지 않았다는 말을 듣는 편이 낫겠다.” 무신론은 인간을 분별
+력, 철학, 법률, 평판 등에 의지하게 한다. 이 모든 것은 설령 종교가 없다 해도 피상적 도덕성의
+지침이 될 수 있지만, 미신은 이 모든 것을 끌어내리고 인간의 마음속에 절대 왕정을 세운다. 무
+신론은 더 먼 곳을 향하지 않음으로써 인간을 자중시킨다. 따라서 국가를 혼란에 빠뜨리지 않는
+다. 우리는 아우구스투스 카이사르의 시대처럼 무신론에 기운 시대가 평화로운 시기였음을 알고
+있다. 반면에 미신은 여러 국가에서 혼란을 야기한다.
+(나) 깨어 있고 효율적인 지성의 체제는 수많은 편견이 만개하도록 내버려 둔다. 그런 체제는 편
+견을 억압하려는 어떤 시도도 하지 않는다. 편견을 억압하는 것은 모두가 똑같은 편견, 즉 권위
+를 지닌 자의 편견을 공유하도록 강요하는 일이기 때문이다. 편견인지 아닌지를 객관적으로 구별
+하는 것, 편견을 선명하게 정의하는 것은 사실상 불가능하다. 지성의 다원주의는 편견을 방임함
+으로써 사람들이 정설에 도전하고, 창의적으로 사고하고, 과감하게 실험할 수 있는 여지를 만들
+어낸다. 심지어 해롭고 악의적인 편견이라도 말이다. 1633년에는 갈릴레오가 지동설을 고집한 것
+이 그런 편견으로 받아들여졌다. 탁월함과 편협함은 같은 동력에서 힘을 얻는다",3,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 3개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) It is better to have no opinion about God than to have the wrong opinion. The former is disbelief
+The latter is an insult, and superstition is of course an insult to God. Plutarch said it best when he wrote
+said it well. ""I would rather be told that there was a man named Plutarch who ate his own children when they were newborn.
+I would rather be told that there never was a man named Lee Plutarch at all."" Atheism discriminates between humans
+power, philosophy, law, and reputation. All of these can be guides to superficial morality, even in the absence of religion.
+superficial morality even in the absence of religion, but superstition overrides all of these and establishes an absolute monarchy in the human mind. Nothingness
+atheism makes men self-reliant by not looking further afield, and thus it is hard to imagine a state that is not in turmoil.
+that does not throw the state into chaos. We know that times inclined to atheism, like those of Augustus Caesar, have been times of peace.
+there are. Superstition, on the other hand, has wreaked havoc in many countries.
+(b) A system of awake and efficient intellect allows many prejudices to flourish. In such a system no attempt is made to suppress the
+It does not make any attempt to suppress prejudices. To suppress prejudice is to make everyone share the same prejudice, the prejudice of those in authority.
+that is, the prejudices of those in authority. Objectively distinguishing what is and is not bias
+It is virtually impossible to objectively distinguish between prejudice and not prejudice. Intellectual pluralism makes bias tolerant
+by creating space for people to challenge orthodoxy, think creatively, and experiment boldly.
+to challenge orthodoxy, think creatively, and experiment boldly. Even harmful and malicious prejudices. In 1633, Galileo's insistence on the theory of geocentrism
+was perceived as such a prejudice. Excellence and intolerance are fueled by the same engine
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","s the generated set of questions and answers:
+
+Question 1
+Please compare the views presented in statements [a] and [b] regarding the role of superstition and prejudice in shaping human morality.
+
+Answer 1
+The views presented in statement [a] suggest that superstition is an insult to God, while statement [b] presents intellectual pluralism as a way to tolerate harmful prejudices. This highlights the contrast between these two perspectives on how to approach moral guidance.
+
+Question 2
+Based on statements [a] and [b], discuss how different philosophical views can lead to varying attitudes towards morality and ethics.
+
+Answer 2
+The views presented in statement [a] emphasize the importance of having a clear opinion about God, while statement [b] highlights the benefits of intellectual pluralism. This contrast between these two perspectives illustrates how different philosophical views can shape one's approach to morality and ethics.
+
+Question 3
+What implications do statements [a] and [b] have for our understanding of the relationship between knowledge and power?
+
+Answer 3
+The views presented in statement [a] suggest that knowledge should be used to guide human behavior, while statement [b] presents intellectual pluralism as a way to challenge authority. This highlights the tension between these two perspectives on the role of knowledge and power in shaping society.
+
+Let me know if you'd like me to generate more questions!","['Please compare the views presented in statements [a] and [b] regarding the role of superstition and prejudice in shaping human morality.', 'Based on statements [a] and [b], discuss how different philosophical views can lead to varying attitudes towards morality and ethics.', 'What implications do statements [a] and [b] have for our understanding of the relationship between knowledge and power?']","['인간의 도덕성을 형성하는 데 있어 미신과 편견의 역할에 관한 제시문 [가]와 [나]에 제시된 견해를 비교하십시오.', '제시문 [가]와 [나]를 바탕으로, 서로 다른 철학적 견해가 어떻게 도덕과 윤리에 대한 다양한 태도로 이어질 수 있는지에 대해 논의하십시오.', '제시문 [가]와 [나]는 지식과 권력의 관계에 대한 우리의 이해에 어떤 함의를 주는가?']"
+"(가) 독일의 한 고등학교에서 벵어라는 교사는 학생들에게 독재의 위험성을 알리는 수업을
+진행하려 했다. 하지만 어려서부터 나치 독일의 문제점에 대해 지겹게 들어왔던 학생들은 벵어의 수업 내용이 지루하다면서 관심을 보이지 않았다. 이에 벵어는 학생들에게
+독재 권력이 나타나게 되는 과정을 직접 체험시켜 주기로 했다. 먼저 벵어는 다수결로
+교실의 대표를 정하자고 제안했다. 투표 결과 벵어가 대표로 선출되었다. 그 후 벵어는
+대표의 자격으로 프로젝트 수업을 위한 세 가지 규칙을 정해서 발표했다. 첫째, 수업 중에는 대표가 호명한 사람만 대답할 수 있으며, 발표자는 일어서서 대답한다. 둘째, 흰
+셔츠와 청바지 같은 단체복을 입는다. 셋째, 수업 중에 명령하면 모두가 일어나서 행진을하듯 발을 맞추는 연습을 한다. 그 때부터 교실에서 단체 행동과 보조를 맞추지 않는
+학생은 배척을 당했다. 시간이 흐를수록 학생들은 대표의 권위에 더욱 더 복종하는 동시에 정치집단이 된 것처럼 행동했고, 스스로를 ‘디 벨레(Die Welle)’라고 불렀다. 학생들은마치 나치식 경례 같은 인상을 주는 독특한 경례를 만들어 냈고, 디 벨레 경례를 하지
+않는 학생들은 교실에 들어오지 못하도록 막았다. 결국 학교는 ‘디 벨레 학생들’과 ‘비(非) 디 벨레 학생들’로 분열되었다. 그리고 그들 사이에서는 공공연하게 집단 난투극이
+벌어지기도 했다. 그러던 어느 날, 벵어는 학생들을 모두 강당에 모이도록 했다. 그 자리에서 벵어는 이 자리에 조직을 배신한 학생이 있다면서 영문 몰라 하는 한 학생을 강단으로 데려오라고 지시했다. 그러자 몇몇 디 벨레 학생들이 배신자로 지목된 학생을
+강단으로 데려왔다. 이를 지켜본 벵어는 다음과 같이 말했다. “독재가 바로 이런 것이다. 여러분은 지금까지 어떤 일들이 일어났는지 알아차려야 한다.” 그러고는 공식적으로 디
+벨레의 해체를 선언했다.
+(나) 한 연구에서 모든 참여자에게 각자 지면 위에 찍힌 점의 개수를 세도록 했다. 그 후참여자가 점의 개수를 정확하게 셌는지 여부와는 관계없이, 참여자 절반에게는 점의 개수를실제보다 초과하여 셌다고 알려주면서 그들을 ‘과대평가자’ 집단으로 분류하고, 나머지
+절반은 ‘과소평가자’ 집단으로 분류했다. 그런 다음, 몇몇 참여자들에게 돈이나 쿠폰을
+주고서 다른 참여자들에게 나눠주도록 했다. 이 때 돈이나 쿠폰을 나눠주는 역할을 맡은 참여자가 다른 참여자들에 관해 알 수 있는 유일한 정보는 ‘과대평가자’와 ‘과소평가자’ 중 어느 집단에 속하는가 하는 것뿐이었다. 그 결과, 연구자가 아무리 사소하거나 임의적인 기준으로 집단을 구분하더라도 사람들은 자신과 동일한 집단에 속하는 사람들에게 돈이나 쿠폰을 더 많이 나눠주려는 경향을 보였다. 기능적 자기공명영상(fMRI)을
+이용한 또 다른 연구에서도 이와 비슷한 결과가 나타났다. 참여자들을 임의적으로 두
+집단으로 나눈 후, 그들에게 다른 사람의 손을 바늘로 찌르는 영상을 보여주고서 fMRI
+를 이용해 그들의 뇌를 관찰했다. 사람들은 자신과 다른 집단에 속한 것으로 표시된 사람의 손이 바늘에 찔릴 때보다 자신과 같은 집단에 속한 것으로 표시된 사람의 손이 바늘에 찔릴 때 두뇌의 활성화 정도가 분명하게 증가했다. ㉠ 인간은 ‘남’이라고 여겨지는
+사람들에 대해서는 공감을 하는 데 어려움을 겪는 것이다. (다) 큰 도(道)가 행해진 세상에서는 천하가 모두의 것이 된다. 현명하고 유능한 사람을 뽑아
+나라를 다스리게 하면 신의가 존중되고 화목이 두터워진다. 그러므로 사람들은 자기 부모만 부모로 여기지 않고, 자기 자식만 자식으로 여기지 않는다. 노인은 안락하게 여생을마칠 수 있고, 장년에게는 일할 자리가 있다. 어린이는 안전하게 자랄 수 있고, 배우자를잃은 사람, 부모가 없는 아이, 자식이 없는 노인, 병든 사람도 모두 보살핌을 받을 수
+있다. 재화가 헛되이 땅에 버려지는 것을 싫어하지만 그렇다고 그것을 결코 자기 것으로 숨겨 두지 않으며, 스스로 일하는 것을 싫어하지 않지만, 또한 자기 자신만을 위하여
+일하지 않는다. 그래서 음모를 꾸미는 일이 생기지 않고, 훔치거나 해치는 일도 일어나지 않는다. 그러므로 집마다 문이 있어도 잠그지 않는다. 이러한 세상을 ‘대동(大同)’이라
+한다.
+(라) 인간의 집합생활은 그저 우연한 사건에 의해 탄생하는 것이 아니라, 우리의 삶을 고양시켜 주는 집합의식에서 비롯되는 것이다. 사회구성의 핵심원리는 집합의식의 내재화이며 이러한 과정은 기계적 연대와 유기적 연대 두 가지로 구분할 수 있다. 기계적 연대에서는 집단을 이루는 목적이나 과정보다는 동질성 그 자체가 유대의 기초를 형성한다. 여기에서는 무엇보다도 오직 ‘같다’는 이유 때문에 강력한 유대가 나타나게 되며 집합의식이 개인의 의식을 지배하게 된다. 그 결과, 기계적 연대 속에서 개인은 주체적인 존재로 기능하기보다는 억압적 규율하에서 집단에 예속되는 모습을 보이거나 다른 집단에
+대해 배타적인 태도를 보일 수 있다. 대조적으로, 유기적 연대에서는 구성원이 사회적
+규율의 권위를 자율적으로 수용하는 동시에 구성원들 간 기능적 상호의존성과 공감에
+기초한 결속이 이루어진다. 유기적 연대는 이질성에 기초한 연대라는 점에서 집합의식이 개인의 의식을 지배하지 않으며 개인의 주체성이 훼손되지 않는다. 따라서 유기적
+연대에서는 배타성의 위험이 상대적으로 적으며 다른 집단에 대한 공감의 가능성도 열려있다. 집합의식의 내재화 과정에서 인간은 자기 집단과 관계된 것들에 특별한 의미를
+부여하기도 하는데, 그 과정에서 이상사회에 대한 관념이 싹트기도 한다. 때때로 사람들은 완전한 이상사회를 떠올리기도 한다. 하지만 이러한 사회는 환상에 불과하며 실제로
+존재했던 적은 없다. 그럼에도 불구하고 이상사회 역시 사회생활의 자연적인 산물이다. 이상사회와 현실사회는 둘 중 하나가 없으면 나머지 하나도 존재할 수 없을 만큼 상호
+간에 긴밀하게 결합되어 있다. 현실사회 없이는 이상사회가 존재할 수 없고 이상사회
+없이는 현실사회도 존재할 수 없다.",4,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 4개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+""Question 4""
+""Answer 4""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (A) At a German high school, a teacher named Wenger tried to teach a class about the dangers of dictatorships.
+But the students, who had been hearing about the problems of Nazi Germany since they were young, found his lesson boring and were not interested. So Wenger decided to teach his students
+to give them a first-hand experience of how dictatorships emerge. First, he proposed a majority vote
+class president by majority vote. They voted, and he was elected. Wenger then
+As the representative, he announced three rules for the project class. First, only the person called on by the representative can answer during class, and the presenter must stand up to answer. Second, the class must wear uniform clothing, such as a white
+shirt and jeans. Third, when I give an order in class, everyone stands up and practices marching in step. From that point on, students who do not keep pace with the group behavior in the classroom
+students who did not keep up with the group behavior in the classroom were ostracized. As time went on, the students became more and more submissive to the authority of their representative and acted as if they were a political group, calling themselves ""Die Welle"". They created a distinctive salute that resembled a Nazi salute, and students who did not do the Die Welle salute were not allowed to enter the classroom.
+Eventually, the school was divided into ""Die Welle students"" and ""non-Die Welle students,"" and public brawls broke out between them.
+between them. One day, Benger called all the students together in an auditorium, where he told them that there was a student who had betrayed the organization and instructed them to bring a student who didn't speak English to the lectern. Several D-Bele students then brought the alleged betrayer to the lectern.
+""This is what dictatorship looks like,"" Wenger said. ""This is what dictatorship looks like. You should recognize what has happened so far."" He then officially declared the dissolution of The
+Belé was officially disbanded.
+(b) In a study, all participants were asked to count the number of dots on the ground. Then, regardless of whether they counted the dots correctly or not, half of the participants were told that they had overestimated the number of dots and were labeled as ""overestimators,"" while the other half were labeled as ""underestimators.
+half of the participants were labeled as 'underestimators'. Then, we gave some participants money or coupons to distribute to the other participants
+money or coupons to distribute to the other participants. The only information that the money or coupon distributors had about the other participants was whether they belonged to the ""overestimators"" or ""underestimators"" group. The results showed that no matter how trivial or arbitrary the researchers made the group distinction, people were more likely to give money or coupons to people who belonged to the same group as themselves. Another study using functional magnetic resonance imaging (fMRI)
+(fMRI), another study found similar results. Participants were randomly divided into two
+groups, they were shown a video of someone poking another person's hand with a needle, and then their brains were examined using fMRI
+to observe their brains. People showed a clear increase in brain activation when the hand of someone labeled as belonging to a different group than their own was pricked than when the hand of someone labeled as belonging to their own group was pricked. Humans have difficulty empathizing with people who are considered ""other.
+In a world where the Great Way is practiced, the world belongs to all. Choose wise and capable people
+People do not regard only their own parents as parents, nor their own children as children, and people do not regard only their own children as children. The elderly can live out their days in comfort, and the young have a place to work. Children can grow up safely, and those who have lost their spouses, children without parents, the elderly without children, and the sick can all be cared for.
+can be cared for. They hate to see goods thrown to the ground in vain, but they never keep them to themselves; they are not averse to working for themselves, but they also do not work for themselves.
+for himself. So there is no conspiracy, no stealing or harming. Therefore, even though each house has a door, they do not lock it. This world is called the ""great circle.
+大同
+(D) The collective life of human beings is not just born by accidental events, but comes from a collective consciousness that elevates our lives. The core principle of social organization is the internalization of collective consciousness, and this process can be divided into two types: mechanical solidarity and organic solidarity. In mechanical solidarity, homogeneity itself, rather than the purpose or process of grouping, forms the basis of bonds. Here, strong bonds emerge primarily because of being ""the same,"" and the collective consciousness dominates the individual consciousness. As a result, in mechanical solidarity, individuals do not function as agents, but rather are subordinated to the group under oppressive discipline, or they may show exclusionary attitudes toward other groups.
+exclusionary attitudes toward other groups. In contrast, in organic solidarity, members autonomously accept the authority of social
+In organic solidarity, members autonomously accept the authority of social discipline, while cohesion is based on functional interdependence and empathy among members.
+functional interdependence and empathy among members. Because organic solidarity is based on heterogeneity, the collective consciousness does not dominate the individual consciousness and individual agency is not compromised.
+solidarity, the risk of exclusivity is relatively low and the possibility of empathy for other groups is open. In the process of internalizing collective consciousness, humans attach special meaning to things related to their group.
+In the process of internalizing collective consciousness, humans attach special meaning to things that are related to their group, and the idea of an ideal society may arise. Sometimes people imagine a perfect society. However, these societies are fantasies and have never
+never existed. Nevertheless, they are a natural product of social life. Ideal and real societies are so intertwined that one cannot exist without the other.
+one without the other. The ideal world cannot exist without the real world, and the real world cannot exist without the ideal world.
+without the real world, and vice versa.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","s the generated set of questions and answers:
+
+Question 1
+Please describe the scenario presented in statement [A] and explain what lessons Wenger aimed to teach his students.
+
+Answer 1
+Wenger created a scenario where he was elected as the class president and imposed rules on the class, which eventually led to the emergence of ""Die Welle"" and a sense of submission among the students. He aimed to teach his students about the dangers of dictatorship by giving them a first-hand experience of how it emerges.
+
+Question 2
+What did Wenger do after he declared that there was a student who had betrayed the organization, and what message did he convey to the students?
+
+Answer 2
+Wenger brought the alleged betrayer to the lectern and officially disbanded ""Die Welle"", conveying the message that this is what dictatorship looks like.
+
+Question 3
+What were the results of the study presented in statement [b] regarding the distribution of money or coupons among participants, and what does it suggest about human behavior?
+
+Answer 3
+The results showed that people were more likely to give money or coupons to those who belonged to the same group as themselves, suggesting that humans have difficulty empathizing with those considered ""other"".
+
+Question 4
+What are the two types of social organization discussed in statement [D], and how do they differ?
+
+Answer 4
+The two types of social organization are mechanical solidarity and organic solidarity. Mechanical solidarity is based on homogeneity and collective consciousness, whereas organic solidarity is based on functional interdependence and empathy among members.
+
+Question 5
+How does the process of internalizing collective consciousness affect individual agency in mechanical solidarity versus organic solidarity?
+
+Answer 5
+In mechanical solidarity, individuals are subordinated to the group under oppressive discipline, while in organic solidarity, individual agency is not compromised as cohesion is based on functional interdependence and empathy among members.","['Please describe the scenario presented in statement [A] and explain what lessons Wenger aimed to teach his students.', 'What did Wenger do after he declared that there was a student who had betrayed the organization, and what message did he convey to the students?', 'What were the results of the study presented in statement [b] regarding the distribution of money or coupons among participants, and what does it suggest about human behavior?', 'What are the two types of social organization discussed in statement [D], and how do they differ?', 'How does the process of internalizing collective consciousness affect individual agency in mechanical solidarity versus organic solidarity?']","['제시문 [가]에 제시된 시나리오를 설명하고 벵거가 학생들에게 어떤 교훈을 가르치고자 했는지 설명하십시오.', '벵거는 조직을 배신한 학생이 있다고 선언한 후 어떤 조치를 취했으며, 학생들에게 어떤 메시지를 전달했나요?', '참가자들 사이의 돈 또는 쿠폰 분배에 관한 제시문 [나]에 제시된 연구 결과는 무엇이며, 인간의 행동에 대해 무엇을 시사합니까?', '제시문 [D]에서 논의된 두 가지 유형의 사회 조직은 무엇이며 어떻게 다른가?', '집단 의식을 내면화하는 과정은 기계적 연대와 유기적 연대에서 개인의 주체성에 어떤 영향을 미칠까요?']"
+"(가) 유교는 인간의 몸과 마음에 하늘과 우주의 이치가 내재되어 있어서 천지 만물 중 인간을 가장 중요한 존재로 여기는 인본주의적 성격을 지닌다. 유교의 인본주의는 초월적
+존재나 정해진 운명의 힘을 믿기보다는 인간이 자기 삶의 주인으로서 현재를 성실하게
+살아갈 것을 강조한다. 유교 사상은 인본주의를 바탕으로 현실에 있어서 인간관계를 중시하고 사랑을 실천할 것을 강조하였다. 그리고 인격을 완성하고자 끊임없이 노력하며, 또 도덕적으로 완성된 인간을 성인으로 대우하며 이상적인 인간상으로 삼았다. 이런 도덕적 실천에 기초한 조화로운 인간관계를 강조한 유교의 경향을 볼 때 유교 사상은 공동체를 중시하는 강한 사회성을 지니고 있음을 짐작할 수 있다. 유교에 따르면, 가족은
+사회를 구성하는 기본 단위이며 사회나 국가는 가족이 확대된 것이다. 그래서 국가의
+원리를 축소하면 가족의 원리가 되는데, 이것이 이른바 ‘천하일가(天下一家)’의 관점이다.
+(나) 근대에 들어 자본주의는 칼뱅의 직업 소명설과 금욕 정신을 통해 더욱 체계화되었다. 칼 뱅은 개인의 운명은 신의 섭리에 의해 예정되어 있으며, 신이 부여한 자신의 직업에
+성실하게 임하여 얻은 부는 신이 주신 구원의 징표라고 생각하였다. 따라서 인간은 신의 은총을 확인하기 위해 일을 열심히 하여 부를 쌓아야 한다고 보았으며, 이러한 자본의 축적이 신의 뜻에 어긋나지 않음을 주장하였다. 그리하여 이윤 추구를 위한 개인의
+노력을 도덕적·종교적으로 합리화하였으며, 나아가 근면하고 검소한 금욕적 생활 자세도
+중요하게 생각하였다. 베버는 후에 칼뱅의 프로테스탄트 윤리가 ‘자본주의 정신’의 출발임을 강조해서 노동을 중시하였으며, 규율에 따라 직업에 헌신할 것을 주장하였다. 그뿐만아니라 낭비를 비윤리적인 것으로 간주하여 근검·절약과 저축 정신을 높이 평가하였다. 그는 이러한 합리적인 이윤 추구 행위와 금욕주의 정신을 자본주의 정신의 바탕이라고
+보았다.
+(다) 미국의 하버드대학교 교수인 두웨이밍(杜維明)은 “역사적으로 유교 문화와 밀접한 관련이 있는 동아시아의 산업화와 경제 발전은 서양의 산업화, 경제 발전과는 다른 양상을
+띱니다.”라고 말하였다. 그가 자신의 책 “문명의 대화”에서 지적한 내용은 바로 유교 문화와 서양의 자본주의가 결합하여 형성된 새로운 형태의 자본주의, 즉 유교 자본주의이다. 그는 효율과 이익을 추구하여 경제 발전을 이룬 서양의 산업과는 달리 혈연·학연·지연을 중시하는 가족주의, 가부장적 권위, 높은 교육열, 개인보다는 집단을 중시하는 공동체 의식, 도덕과 윤리를 중시하는 사회의식, 유교 문화의 동질 감 등 유교 문화의 영향으로 동아시아가 성공적인 산업화와 경제 발전을 이루었다고 주장하였다. (라) 자본주의에서 재산은 개인의 노력 이외에도 타고난 환경이나 지능, 상속, 복권과 같은 우연적 요인들에 의해 형성된다. 문제는 이러한 우연적 요인이 자본주의 사회에서 부의 분배를 불균등하게 만들기 쉽다는 것이다. 특히 사회 구조적으로 생산 수단과 교육의 정도를 대물림하면서 부자와 가난한 사람의 격차가 커지는 경제 불평등이 심해지고 있다. 이는 빈곤한 사람들의 인간 존엄성을 해치기도 하며, 계층 간의 위화감 을 조성해서 사회통합을 저해하는 등 심각한 부작용을 유발한다. 자본주의에서는 개인 또는 집단 간의
+지나친 경쟁을 유발하여 인간성을 해치는 경우나 경쟁에서 이기기 위하여 도덕적 타락을 용인하는 일이 적지 않다. 또 목적을 달성하기 위해 수단과 방법을 가리지 않거나
+인간을 물질적 가치로만 평가하기도 한다. 이는 개인의 삶을 피폐하게 할 뿐만 아니라
+사회 전체의 연대와 공동체 의식을 약화한다.",3,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 3개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) Confucianism is a humanistic religion that considers human beings to be the most important of all beings in the heavens and the universe because they are inherent in the human body and mind. Confucian humanism is a belief in a transcendent
+Rather than believing in the power of a transcendent being or a predetermined destiny, Confucian humanism emphasizes that humans are the masters of their own lives and
+the present as the master of one's own life. Based on humanism, Confucian thought emphasizes the importance of human relationships and the practice of love in reality. It also emphasized the constant striving to perfect one's personality, treating the morally perfected human being as a saint, and making him or her the ideal human being. Given Confucianism's tendency to emphasize harmonious human relationships based on these moral practices, it can be inferred that Confucian thought has a strong social character that values community. According to Confucianism, the family is
+is the basic unit of society, and society or the state is an extension of the family. Therefore, the
+principle of the state becomes the principle of the family, which is the so-called ""one family under heaven"" perspective.
+(b) In modern times, capitalism has been further systematized through Calvin's theory of vocation and asceticism. Calvin believed that an individual's destiny is predestined by divine providence, and that the wealth earned through faithfulness to one's divinely assigned vocation
+Therefore, he believed that humans should work hard to accumulate wealth in order to confirm God's favor, and he argued that the accumulation of capital was not contrary to God's will. Thus, the individual's pursuit of profit
+individual's efforts in the pursuit of profit were rationalized morally and religiously, and a hardworking, frugal, and ascetic lifestyle was also
+ascetic lifestyle. Weber later emphasized that Calvin's Protestant ethics was the beginning of the ""capitalist spirit,"" emphasizing the importance of labor and advocating a disciplined dedication to work. He also considered wastefulness to be unethical, and praised frugality, thrift, and savings. He considered these rational profit-seeking behaviors and asceticism to be the foundation of the capitalist spirit.
+capitalist spirit.
+(C) Du Weiming, a professor at Harvard University in the United States, said, ""The industrialization and economic development of East Asia, which is historically closely related to Confucian culture, has a different pattern from the industrialization and economic development of the West.
+the West."" What he pointed out in his book ""Dialogue of Civilizations"" is a new form of capitalism formed by the combination of Confucian culture and Western capitalism, namely Confucian capitalism. He argued that unlike Western industry, which pursues efficiency and profit to achieve economic development, East Asia has achieved successful industrialization and economic development due to the influence of Confucian culture, including familism, patriarchal authority, high education, a sense of community that emphasizes the group rather than the individual, a social consciousness that emphasizes morality and ethics, and a sense of homogeneity in Confucian culture. (d) In capitalism, wealth is formed by chance factors such as innate environment, intelligence, inheritance, and lotteries in addition to individual efforts. The problem is that these chance factors tend to lead to unequal distribution of wealth in capitalist societies. In particular, economic inequality is growing, where the gap between the rich and the poor is widening due to the social structure of inheriting the means of production and education. This has serious side effects, such as undermining the human dignity of the poor and creating a sense of disparity between classes, which hinders social integration. Capitalism encourages excessive competition between individuals or groups
+excessive competition between individuals or groups that dehumanizes them, or tolerates moral degradation in order to win the competition, or to use any means to achieve its goals, or to value human beings only in terms of material values.
+or evaluate human beings only in terms of their material value. Not only does this devastate individual lives
+but also undermines the sense of solidarity and community in society as a whole.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re three sets of questions and answers based on the new statements:
+
+**Set 1**
+Question 1
+Please describe the key characteristics of Confucian humanism mentioned in statement (a).
+Answer 1
+The key characteristics of Confucian humanism mentioned in statement (a) include emphasizing human beings as the most important being, believing humans are masters of their own lives, and striving for moral perfection.
+
+Question 2
+Please compare the social character of Confucian thought with that of Calvin's theory of vocation and asceticism discussed in statement (b).
+Answer 2
+The social character of Confucian thought emphasizes harmonious human relationships based on moral practices, whereas Calvin's theory of vocation and asceticism emphasizes individual hard work and accumulation of wealth.
+
+Question 3
+Please explain how Du Weiming's concept of Confucian capitalism differs from Western capitalism mentioned in statement (c).
+Answer 3
+Du Weiming's concept of Confucian capitalism is distinct from Western capitalism as it combines Confucian cultural values such as familism, patriarchal authority, and social consciousness with Western capitalist principles.
+
+**Set 2**
+Question 1
+Please describe the role of family in society according to Confucian thought mentioned in statement (a).
+Answer 1
+According to Confucian thought, the family is the basic unit of society, and society or the state is an extension of the family.
+
+Question 2
+Please analyze how chance factors such as innate environment, intelligence, inheritance, and lotteries contribute to unequal distribution of wealth in capitalist societies mentioned in statement (d).
+Answer 2
+Chance factors such as innate environment, intelligence, inheritance, and lotteries can lead to unequal distribution of wealth in capitalist societies, contributing to growing economic inequality.
+
+Question 3
+Please evaluate the potential consequences of excessive competition between individuals or groups in capitalism discussed in statement (d).
+Answer 3
+Excessive competition between individuals or groups in capitalism can lead to dehumanization, moral degradation, and a sense of disparity between classes, undermining social integration and human dignity.
+
+**Set 3**
+Question 1
+Please compare the values emphasized by Confucian thought with those emphasized by Calvin's theory of vocation and asceticism mentioned in statements (a) and (b).
+Answer 1
+Confucian thought emphasizes moral perfection, harmonious relationships, and community, whereas Calvin's theory of vocation and asceticism emphasizes individual hard work, accumulation of wealth, and rational profit-seeking.
+
+Question 2
+Please discuss how Confucian culture influences the social structure of East Asian societies mentioned in statement (c).
+Answer 2
+Confucian culture has influenced the social structure of East Asian societies by emphasizing familism, patriarchal authority, high education, a sense of community, and morality and ethics.
+
+Question 3
+Please analyze the implications of tolerating moral degradation for achieving goals or accumulating wealth discussed in statement (d).
+Answer 3
+Tolerating moral degradation to achieve goals or accumulate wealth can lead to dehumanization, undermine individual lives, and create social unrest.","['Please describe the key characteristics of Confucian humanism mentioned in statement (a).', ""Please compare the social character of Confucian thought with that of Calvin's theory of vocation and asceticism discussed in statement (b)."", ""Please explain how Du Weiming's concept of Confucian capitalism differs from Western capitalism mentioned in statement (c)."", 'Please describe the role of family in society according to Confucian thought mentioned in statement (a).', 'Please analyze how chance factors such as innate environment, intelligence, inheritance, and lotteries contribute to unequal distribution of wealth in capitalist societies mentioned in statement (d).', 'Please evaluate the potential consequences of excessive competition between individuals or groups in capitalism discussed in statement (d).', ""Please compare the values emphasized by Confucian thought with those emphasized by Calvin's theory of vocation and asceticism mentioned in statements (a) and (b)."", 'Please discuss how Confucian culture influences the social structure of East Asian societies mentioned in statement (c).', 'Please analyze the implications of tolerating moral degradation for achieving goals or accumulating wealth discussed in statement (d).']","['제시문 (가)에 언급된 유교적 인본주의의 주요 특징을 설명하세요.', '유교 사상의 사회적 성격과 제시문 (나)에서 논의한 칼빈의 소명론 및 금욕주의의 사회적 성격을 비교하십시오.', '두웨이밍의 유교 자본주의 개념이 제시문 (다)에 언급된 서구 자본주의와 어떻게 다른지 설명하세요.', '제시문 (가)에 언급된 유교 사상에 따라 사회에서 가족의 역할에 대해 설명하십시오.', '선천적 환경, 지능, 상속, 복권 등의 우연적 요인이 제시문 (라)에 언급된 자본주의 사회에서 부의 불평등한 분배에 어떻게 기여하는지 분석하십시오.', '제시문 (라)에서 논의된 자본주의에서 개인 또는 집단 간의 과도한 경쟁이 초래할 수 있는 잠재적 결과를 평가하십시오.', '유교 사상에서 강조하는 가치와 제시문 (가)와 (나)에 언급된 칼빈의 소명론과 금욕주의에서 강조하는 가치를 비교하십시오.', '제시문 (다)에 언급된 유교 문화가 동아시아 사회의 사회 구조에 어떤 영향을 미쳤는지 논의하십시오.', '제시문 (라)에서 논의된 목표 달성이나 부의 축적을 위해 도덕적 타락을 용인하는 것이 갖는 함의를 분석하십시오.']"
+"(가) 4차 산업혁명 시대의 핵심은 초연결(hyper-connected)사회이다. 초연결사회에서는 사물, 공간 등 모든 것들이 인터넷으로 서로 연결되어, 모든 것에 대한 정보가 생성· 수집되고
+공유·활용된다. 모든 사물과 공간에 새로운 생명이 부여되고 이들의 소통으로 새로운 사회가 열리는 것이다. 인간 대 인간은 물론, 기기와 사물 같은 무생물 객체끼리도 네트워크를 바탕으로 상호 유기적인 소통이 가능해지면서, 오프라인과 온라인의 융합을 통해
+새로운 성장과 가치 창출의 기회가 더욱 증가할 전망이다. 무엇보다 사물인터넷, 인공지능, 센서 등의 기술발달로 제조, 유통, 의료, 운송 등 다양한 분야에서 지능적이고 혁신적인 서비스 제공이 가능해진다.
+(나) 오늘날의 과학 기술은 인간이 과거에 상상했던 것들을 현실로 바꿔놓고 있다. 과학 기술에 대해 낙관적인 견해를 가진 사람들은 과학 기술이 인류에게 무한한 부와 영원한
+행복을 가져다 줄 것이라고 주장한다. 하지만 이러한 과학 기술 지상주의는 과학 기술의 고유한 가치와 타당성을 벗어나 그 성과를 일방적으로 높게 평가하고 과학 기술의
+한계와 위험을 간과하게 만든다. 예를 들어 생명 의료 기술의 발전은 인류에게 건강 증진, 생명 연장 등의 혜택을 주었지만, 안락사, 생명 복제 등 생명의 존엄성을 훼손하고
+인간의 정체성 규정에 부정적인 영향을 주는 등의 문제를 일으키고 있다. 따라서 인간의 삶에 대한 과학 기술의 긍정적 기여를 인정하면서도 그 부정적 영향을 최소화하기
+위해 기술을 비판적으로 바라보는 자세도 지녀야 한다.
+(다) 증기자동차의 발달은 마부들의 생존권을 위협해 마차 업계의 강력한 반발을 불러왔다. 여론에 민감했던 영국의회는 1865년에 ‘적기조례(Red Flag Act)’를 공표하였다. 적기조례에
+따르면, 증기자동차는 시내에서 최고 속도가 시속 2마일(약 3.2km)을 넘을 수 없었고, 붉은 깃발을 든 신호수를 반드시 대동해서 운행해야 했다. 신호수는 60야드(약 55m) 앞에서 걸어가며 마차나 말이 접근할 때 운전수에게 신호를 보내는 역할을 수행했다. 적기조례 때문에 증기자동차는 무용지물이 되었으며 번창하던 증기자동차 업계도 급제동이걸렸다. 과잉규제라는 논란 속에서도 적기조례는 1896년까지 31년간 존속했다.
+(라) 스위스 연방은행은 세계 경제 포럼에서 제공하는 국가 경쟁력 순위를 바탕으로 4차 산업혁명에 잘 적응할 수 있는 국가들을 순위별로 소개하였다. 다음은 대한민국을 포함한
+OECD 주요국의 항목별 국가 경쟁력 순위를 나타낸 표이다.",3,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 3개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) The core of the 4th Industrial Revolution is a hyper-connected society. In a hyper-connected society, everything, including objects and spaces, is connected to each other via the Internet, and information about everything is created, collected, shared, and utilized.
+shared and utilized. All objects and spaces are given new life, and a new society is opened through their communication. As human-to-human and inanimate objects such as devices and objects are able to communicate organically with each other based on the network, the convergence of offline and online will create new opportunities for growth and value.
+offline and online, new opportunities for growth and value creation are expected to increase. In particular, the development of technologies such as the Internet of Things, artificial intelligence, and sensors will enable the provision of intelligent and innovative services in various fields such as manufacturing, distribution, healthcare, and transportation.
+(b) Today's science and technology are transforming things that humans have only imagined in the past into reality. Optimists argue that science and technology will bring unlimited wealth and eternal happiness to humanity.
+infinite wealth and eternal happiness. However, this kind of science and technology secularism takes away from the inherent value and relevance of science and technology, overvalues its achievements, and overlooks its limitations and risks.
+limitations and risks of science and technology. For example, advances in biomedical technology have benefited mankind by improving health and prolonging life, but they have also undermined the dignity of life, such as euthanasia and cloning, and negatively affected the definition of human identity.
+euthanasia and cloning, and negatively affecting the definition of human identity. Therefore, while acknowledging the positive contributions of science and technology to human life, we must also take a critical view of technology to minimize its negative impacts.
+to minimize the negative impacts of technology.
+(C) The development of the steam engine threatened the livelihood of horse-drawn carriages, which led to strong opposition from the horse-drawn carriage industry. Sensitive to public opinion, the British Parliament promulgated the Red Flag Act in 1865. The Red Flag Act
+stated that steam engines could not exceed a top speed of 2 miles per hour (about 3.2 kilometers per hour) in towns and must be accompanied by a signalman with a red flag. The signalman walked 60 yards (about 55 meters) ahead and signaled to the driver when a carriage or horse approached. The Red Flag Ordinance rendered steam cars obsolete and brought the thriving steam car industry to a screeching halt. Despite being criticized as overregulation, the Red Flag Ordinance survived for 31 years, until 1896.
+(d) Based on the World Economic Forum's ranking of national competitiveness, the Swiss National Bank has ranked countries that are well positioned to adapt to the Fourth Industrial Revolution. The following is the ranking of
+OECD countries, including South Korea.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","s the generated set of questions and answers:
+
+Question 1
+Please describe the implications of the ""hyper-connected society"" concept in statement (a) for the way we live and interact with each other.
+
+Answer 1
+The hyper-connected society implies that everything and everyone will be connected through the Internet, creating new opportunities for growth and value creation, but also increasing our reliance on technology and potentially changing the nature of human relationships.
+
+Question 2
+How do statements (a) and (b) contrast in their views on the potential impact of science and technology on humanity?
+
+Answer 2
+Statement (a) presents a utopian view of science and technology, emphasizing its transformative power to create new opportunities for growth and value creation, while statement (b) takes a more critical view, highlighting the limitations and risks of relying solely on technology without considering its potential negative consequences.
+
+Question 3
+What lesson can be drawn from the example of the Red Flag Act in statement (c) regarding the regulation of technological innovation?
+
+Answer 3
+The Red Flag Act shows that even well-intentioned attempts to regulate new technologies can have unintended consequences, such as rendering an entire industry obsolete, and highlights the need for careful consideration and adaptation when introducing regulations.
+
+Question 4
+How do statements (a), (b), and (d) relate to each other in terms of their discussion of technological advancements and their impact on society?
+
+Answer 4
+All three statements discuss the potential transformative power of technology, but while statement (a) emphasizes its positive aspects, statement (b) takes a more critical view, and statement (d) presents a ranking of countries based on their adaptability to technological changes.
+
+Question 5
+What is the common theme or thread that runs through statements (a), (b), and (c) regarding the relationship between technology and society?
+
+Answer 5
+The common thread among the three statements is the idea that technology has the power to transform society, but its impact must be carefully considered and managed to avoid unintended consequences.","['Please describe the implications of the ""hyper-connected society"" concept in statement (a) for the way we live and interact with each other.', 'How do statements (a) and (b) contrast in their views on the potential impact of science and technology on humanity?', 'What lesson can be drawn from the example of the Red Flag Act in statement (c) regarding the regulation of technological innovation?', 'How do statements (a), (b), and (d) relate to each other in terms of their discussion of technological advancements and their impact on society?', 'What is the common theme or thread that runs through statements (a), (b), and (c) regarding the relationship between technology and society?']","['제시문 (가)의 ""초연결 사회"" 개념이 우리가 생활하고 서로 상호작용하는 방식에 미치는 영향을 설명하세요.', '제시문 (가)와 (나)는 과학과 기술이 인류에 미칠 잠재적 영향에 대한 견해가 어떻게 대조되는가?', '기술 혁신의 규제에 관한 제시문 (다)의 붉은 깃발법의 예에서 어떤 교훈을 얻을 수 있습니까?', '제시문 (가), (나), (라)는 기술 발전과 그것이 사회에 미치는 영향에 대한 논의라는 점에서 서로 어떻게 관련되어 있습니까?', '기술과 사회의 관계에 관한 제시문 (가), (나), (다)를 관통하는 공통된 주제 또는 주제는 무엇입니까?']"
+"(가) 이타주의란 자신에게 발생할 손해를 감수하고 타인에게 이득을 주려는 생각 또는 행동을
+뜻한다. 이러한 이타주의에 대해서 다양한 논의가 이루어졌다. 이타주의는 거대한 규모의
+현대 자본주의 사회에는 더 이상 어울리지 않는 낡은 덕목에 지나지 않는다는 (a)견해가 있다. 이에 따르면 현대 사회에서는 누군가를 위해서가 아니라 자신만을 위해서 행동한 결과 대규모 협력이 이루어진다. 우리가 시장에서 구매해서 사용하고 있는 물건을 보자. 이들
+대부분은 살아가면서 한 번도 마주칠 일이 없는 저 어딘가에 있는 누군가가 ‘자신의 이익을
+위해서’ 만든 것이다. 이처럼 시장이라는 메커니즘은 우리 눈에 보이지 않는 누군가의 필요도 충족시켜 주고, 자신의 이익만을 추구하면서 행동하더라도 결과적으로는 사회 전체의 복지를 증진시키는 대규모 협력체계를 만들어 낸다. 따라서 이기심이라는 강력한 충동 앞에서 무너지기 쉬운 이타주의에 기초를 둘 것이 아니라, 이기심만으로도 시장이 잘
+작동할 수 있게 하는 법적·제도적 장치를 고안하는 것이 더 중요하다. 한편 생물학자들은 우리의 이기심이 유전자에 각인된 것이라고 본다. 이 (b)견해에 따르면 유전자가 살아남기 위한 자기복제의 메커니즘이 모든 생명체가 가진 생족 본능, 즉
+이기심의 뿌리다. 하지만 그들은 이기심이 이타주의와 모순된다고 보는 것은 아니며 진화를 통해 이타주의가 형성되었다는 점을 인정한다. 어떤 성향이 진화한다는 것은 그 성향을 가짐으로써 그렇지 않은 경우에 비해, 자손의 수든 물질적 이득의 크기든, 더 큰
+보상을 받게 된다는 것을 의미한다. 이타주의는 사회에서 수행해야 할 역할이 있기 때문에 진화 과정 속에서 살아남을 수 있었다.
+(나) 최근 미국 캘리포니아 대학의 한 연구팀은 취학 전인 네 살 남녀 어린이 총 74명을 대상으로 실험을 실시했다. 먼저 아이들이 다양한 게임을 통해 총 20개의 교환권을 획득할수 있게 했다. 게임이 끝나 갈 때 쯤 교환권을 선물로 바꿀 수 있다는 것을 알려 준 후, 아파서 게임에 참여하지 못한 친구들에게 교환권을 기부할 수 있다고 말해 주었다. 이후
+연구팀은 비밀 공간에 마련된 상자에 어린이들이 각자 알아서 교환권을 넣도록 했다. 그 결과 총 74명의 어린이 중 40명이 적어도 한 개 이상의 교환권을 기부했으며 한 개도
+넣지 않은 아이도 34명에 달했다. 이번 연구는 흥미로운 점이 있다. 실험 전에 어린이들에게 부착한 전극으로 미주신경(vagus nerve)을 모니터한 결과, 기부를 많이 한 어린이의 경우 미주신경이 더욱 활성화되는
+것으로 나타난 것이다. 연구를 이끈 밀러 박사는 “미주신경은 신체에서 가장 광범위하게 부교감신경을 지배하는데, 심장 박동과 스트레스를 안정적으로 제어한다.”면서 “우리 감정을편안하고 안정적으로 이끌어 건강을 유지하고 원활한 사회적 관계를 맺는 데 도움이 된다.” 고
+설명했다.",5,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 5개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+""Question 4""
+""Answer 4""
+""Question 5""
+""Answer 5""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) Altruism is the idea or action of benefiting others at the expense of one's own self.
+to benefit others at the expense of oneself. There have been various discussions about altruism. Altruism is a huge
+(a) The view that altruism is nothing more than an old-fashioned virtue that is no longer relevant in modern capitalist society. According to this view, in modern society, large-scale cooperation occurs as a result of people acting for themselves and not for others. Consider the things we buy and use in the marketplace. These
+most of them were made ""for their own good"" by someone somewhere out there that you'll never meet in your life.
+for their own benefit. The mechanism of the market thus creates a large-scale system of cooperation that fulfills the needs of people we don't see, and that ultimately promotes the well-being of society as a whole, even if they are acting in their own self-interest. Rather than being based on altruism, which can easily crumble in the face of the powerful impulse of self-interest, we need to look at the legal and institutional frameworks that allow the market to function well in the face of self-interest alone.
+It's more important to devise legal and institutional arrangements that allow markets to function well on the basis of self-interest alone. Biologists, on the other hand, see our self-interest as imprinted in our genes. According to this (b) view, the mechanism of self-replication that allows genes to survive is the survival instinct that all living things have, the
+the root of selfishness. However, they do not see selfishness as contradictory to altruism and recognize that altruism has been shaped by evolution. The evolution of a disposition means that having that disposition leads to greater rewards, whether in terms of offspring or material gain, than not having it.
+the number of offspring or the size of the material gain. Altruism has survived the evolutionary process because it has a role to play in society.
+(B) Recently, a research team from the University of California in the United States conducted an experiment with a total of 74 preschool-aged boys and girls. First, the children were allowed to earn a total of 20 vouchers through various games. Towards the end of the game, they were told that they could exchange the vouchers for gifts, and then they were told that they could donate the vouchers to their friends who were sick and could not participate in the game. Afterward
+The researchers let the children independently place their vouchers in a box in a secret room. The results showed that 40 of the 74 children donated at least one voucher, and 34 did not donate any.
+34 children didn't put any vouchers in the box. The study has an interesting twist. The vagus nerve was monitored with electrodes attached to the children before the experiment, and it was found that the vagus nerve was more active in children who donated more.
+vagus nerve was more active in children who gave more. ""The vagus nerve is the most pervasive of the parasympathetic nerves in the body, controlling heart rate and stress,"" says Dr. Miller, who led the study. ""It helps keep our emotions relaxed and stable, which helps us stay healthy and have good social relationships."" He
+explained.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","s the generated set of questions and answers:
+
+Question 1
+Please describe the concept of altruism mentioned in statement (a).
+
+Answer 1
+Altruism refers to the idea or action of benefiting others at the expense of one's own self.
+
+Question 2
+Based on statements (a) and (b), compare and contrast the views on altruism as an old-fashioned virtue versus a genetically imprinted trait.
+
+Answer 2
+Statement (a) views altruism as an outdated virtue, while statement (b) sees it as a genetic trait that has evolved over time.
+
+Question 3
+Please explain how the mechanism of the market in modern capitalist society can be seen as a form of cooperation, as mentioned in statement (c).
+
+Answer 3
+The mechanism of the market creates large-scale cooperation by allowing individuals to act in their own self-interest, which ultimately promotes the well-being of society.
+
+Question 4
+Based on the experiment conducted by the research team from the University of California, what can be inferred about children's willingness to donate vouchers to their friends who are sick and cannot participate in the game?
+
+Answer 4
+Forty out of seventy-four children donated at least one voucher, while thirty-four did not donate any.
+
+Question 5
+Please discuss the relationship between the vagus nerve activity and the decision to donate vouchers among the children participating in the experiment.
+
+Answer 5
+The study found that the vagus nerve was more active in children who donated more vouchers, indicating a link between emotional stability and altruistic behavior.","['Please describe the concept of altruism mentioned in statement (a).', 'Based on statements (a) and (b), compare and contrast the views on altruism as an old-fashioned virtue versus a genetically imprinted trait.', 'Please explain how the mechanism of the market in modern capitalist society can be seen as a form of cooperation, as mentioned in statement (c).', ""Based on the experiment conducted by the research team from the University of California, what can be inferred about children's willingness to donate vouchers to their friends who are sick and cannot participate in the game?"", 'Please discuss the relationship between the vagus nerve activity and the decision to donate vouchers among the children participating in the experiment.']","['제시문 (가)에 언급된 이타주의의 개념에 대해 설명하세요.', '제시문 (가)와 (나)를 바탕으로, 이타주의를 구시대적 미덕으로 보는 견해와 유전적으로 각인된 특성으로 보는 견해를 비교하고 대조하십시오.', '제시문 (다)에서 언급한 것처럼 현대 자본주의 사회에서 시장의 메커니즘이 어떻게 협력의 한 형태로 볼 수 있는지 설명하세요.', '캘리포니아 대학교 연구팀이 수행한 실험을 바탕으로, 아프거나 게임에 참여할 수 없는 친구를 위해 바우처를 기부하려는 아이들의 의지에 대해 유추할 수 있는 것은 무엇일까요?', '실험에 참여한 어린이들의 미주신경 활동과 바우처 기부 결정 사이의 관계에 대해 토론해 주세요.']"
+"(가) 정의란 개인 간의 올바른 도리 또는 사회를 구성하고 유지하는 공정한 도리로서 사회가
+추구해야 할 가장 핵심적이고 기본적인 덕목 중 하나다. 동양에서 정의는 ‘천리(天理)’에 부합하는 올바름 혹은 올바른 도리라는 의미가 강했다. 서양에서 정의는 올바름과 더불어 ‘개인 간 혹은 사회적 관계 속에서의 공정함’이라는 의미를 가진다. 사회 정의의 종류에는 다음과 같은 것이 있다. 우선 분배적 정의는 각자가 자신의 몫을 누리게 하는 것으로, 공정한 분배 기준에 대한 사회적 합의와 관련이 있다. 아리스토텔레스에게 있어서 분배적 정의는 사회에 기여한 바에 따라 사회적 지위와 명예 등을 ‘달리’ 부여하는 것을 의미한다. 또한 어떤 사회적 행위에 준거를 찾으려고 할 때 그 행위의 주요 목적으로부터 파악하여야 한다는 생각은 정의 실현에 대한 아리스토텔레스 생각의 핵심이다. 마르크스는 ‘능력에 따라 일하고 필요에
+따라 분배할 것’을 제안했다. 벤담의 공리주의에 있어서 정의는 ‘최대 다수의 최대 행복’이라는 말에서 알 수 있듯이 선(善)의 최대화, 즉 사회 전체의 효용을 극대화하는 것이다.
+ 한편 절차적 정의는 공정한 절차를 통하여 발생한 결과는 정당하다는 것으로, 합의 과정의 투명성과 공정성에 초점을 둔다. 그리고 교정적 정의는 잘못에 대한 대응이 공정한지에
+대한 것이다. 즉, 어떤 잘못에 대해 처벌과 배상이 피해의 정도에 따라 공정하게 정해졌는지를 보는 것으로, 법적 정의와 관계가 깊다.
+ 그렇다면 한국인의 사회 정의에 대한 인식은 어떠할까? 한 설문 조사 결과에 따르면, 응답자 중 88%는 한국은 법이 공정하게 집행되지 않는다고 생각하며, 80%는 한국이 갈수록
+성공하기 어려운 나라가 되고 있다고, 79%는 열심히 노력해도 계층 이동을 할 수 있는 사회가 아니라고 생각하는 것으로 나타났다. ㉠이와 같은 불신에는 세대・지역・계층별 차이가 거의 없었다.
+(나) 안암국 정부에서는 현재 다음의 A, B 방안 중 하나로 세금을 환급해 줄 계획이다.",5,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 5개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+""Question 4""
+""Answer 4""
+""Question 5""
+""Answer 5""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) justice is the right conduct between individuals or the fair conduct that organizes and sustains a society.
+It is one of the most core and basic virtues that a society should pursue. In the East, justice had a strong sense of rightness or correctness in accordance with the ""natural law"". In the West, justice has come to mean ""fairness between individuals or in social relationships"" in addition to rightness. There are the following types of social justice. First, distributive justice is about making sure that everyone gets their fair share, and it involves a social consensus on the criteria for fair distribution. For Aristotle, distributive justice means granting social status, honor, etc. ""differently"" according to the contributions they make to society. Also, the idea that we should start with the primary purpose of a social action when trying to determine its legitimacy is central to Aristotle's idea of justice. Marx proposed that ""from each according to his ability, to each according to his need.
+according to ability and distribute according to need. For Bentham's utilitarianism, justice is the maximization of the greatest good, or the utility of society as a whole, as evidenced by the phrase ""the greatest happiness of the greatest number.
+ Procedural justice, on the other hand, focuses on the transparency and fairness of the process, ensuring that the outcome is justified through a fair process. And corrective justice is about whether the response to a wrong is fair.
+It is related to legal justice in that it looks at whether the punishment and compensation for a wrong are fairly determined according to the degree of harm.
+ But how do Koreans perceive social justice? According to one survey, 88% of respondents believe that the law is not enforced fairly in South Korea, 80% believe that South Korea is becoming an increasingly difficult country to succeed in, and 79% believe that the country is becoming a
+increasingly difficult country to succeed in, and 79% believe that it is not a society where you can move up the social ladder even if you work hard. There were few generational, regional, or class differences in these distrusts.
+(B) The government of Anam currently plans to refund taxes in one of the following ways.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re five sets of questions and answers based on the new statement:
+
+Question 1
+Please describe the concept of justice as described in [a] and explain how it differs between Eastern and Western perspectives.
+
+Answer 1: The concept of justice as described in [a] refers to the right conduct between individuals or the fair conduct that organizes and sustains a society. It has a strong sense of rightness or correctness in accordance with natural law in Eastern philosophy, whereas in Western philosophy, it emphasizes fairness between individuals or in social relationships.
+
+Question 2
+Please provide an example of how distributive justice manifests itself in modern society.
+
+Answer 2: An example of distributive justice is when a government ensures that everyone has access to basic necessities like healthcare and education, based on a social consensus on the criteria for fair distribution.
+
+Question 3
+Compare and contrast the views on social justice held by Aristotle and Marx.
+
+Answer 3: Aristotle's view on social justice emphasizes granting social status, honor, etc. ""differently"" according to the contributions individuals make to society, whereas Marx proposes that resources should be distributed based on ability and need.
+
+Question 4
+How does procedural justice relate to legal justice?
+
+Answer 4: Procedural justice focuses on the transparency and fairness of the process, ensuring that the outcome is justified through a fair process, whereas corrective justice looks at whether the response to a wrong is fair in terms of punishment and compensation for harm caused.
+
+Question 5
+What do the statistics from South Korea suggest about perceptions of social justice?
+
+Answer 5: The survey suggests that a significant majority of Koreans believe that the law is not enforced fairly, and that it is becoming increasingly difficult to succeed in society, regardless of hard work or social class.","['Please describe the concept of justice as described in [a] and explain how it differs between Eastern and Western perspectives.', 'Please provide an example of how distributive justice manifests itself in modern society.', 'Compare and contrast the views on social justice held by Aristotle and Marx.', 'How does procedural justice relate to legal justice?', 'What do the statistics from South Korea suggest about perceptions of social justice?']","['가]에 설명된 정의의 개념을 설명하고 동양과 서양의 관점이 어떻게 다른지 설명하세요.', '현대 사회에서 분배 정의가 어떻게 나타나는지 예를 들어주세요.', '아리스토텔레스와 마르크스가 주장한 사회 정의에 대한 견해를 비교하고 대조해 보세요.', '절차적 정의는 법적 정의와 어떤 관련이 있나요?', '한국의 통계는 사회 정의에 대한 인식에 대해 무엇을 시사하나요?']"
+"(가) 민중은 무엇이 선인지 제대로 알지 못하고, 그저 자기 마음에 들거나 만족을 주는
+것을 선과 혼동하고 있다. 그러니 그들의 도시를 위해 정말로 선한 것이 무엇인지
+그들이 어떻게 결정할 수 있겠는가? 민중 집회는 누구나 다른 사람의 말에는 귀 기울이지 않고 자기 주장만 떠들어대는 북새통이 되어버릴 것이다. 경제나 군대 문제와 같이 공동체에 중요한 대부분의 사안들은 비전문가들로서는 이해하기가 쉽지 않다. 방어 전략을 세우는 문제에서 장군의 의견과 목수의 의견이 어떻게 똑같은 가치를 지닐 수 있겠는가? 게다가 민중은 매 순간 자신들의 의견을 쉽게 바꾼다. 바로 어제는 열렬하게 옹호했던 생각을, 오늘은 싫어하고 화를 낸다. 대다수의 민중을
+끌어들이는 것은 매우 손쉬운 일이다. 잘못과 문제를 지적하는 생각이 깊은 사람보다 말만 잘하는 궤변론자나 선동 정치가들에게 사람들은 더 솔깃해지는 법이다. (나) 자연 상태에서 인간은 자연권을 바탕으로 비교적 평화로운 삶을 누렸다. 그러나 공통의 법률이나 재판관이 없었기 때문에 자연 상태에서는 개인의 생명과 자유, 재산을 보존할 수 있는 권리가 확실히 보장되지 않았다. 그래서 개인은 자신의 권리를
+보장받기 위해 계약을 맺어 국가를 만들었다. 즉, 국가는 개인의 생명, 자유, 재산을
+지키기 위한 것이며, 주권은 어디까지나 국민에게 있다. 만일, 정부가 국민의 생명과
+자유와 재산을 침해한다면, 국민은 양도했던 권리를 정부에게서 되찾는 저항권을
+행사할 수 있다. (다) 정부는 주민들의 거센 반대로 00차 보금자리지구로 지정된 □□시와 △△시 등의
+사업규모를 축소하기로 했다. 보금자리주택사업을 반대하는 주민들이 시장 주민소환까지 추진하는 극단적인 상황이 연출되자 정부가 결국 한발 물러선 셈이다. 수도권에 값싼 중소형 주택을 대량 공급해 무주택 서민들의 주거안정을 꾀한다는 좋은
+취지하에 이뤄지는 보금자리주택사업은 진행되는 곳마다 주민들의 반대에 가로막히고 있다. 전문가들은 부동산시장에서 ‘보금자리주택＝집값하락’이란 공식이 확산되고 있기 때문이라고 분석한다. 시세보다 싼 보금자리주택이 들어서면 주변 집값이
+떨어질 수밖에 없다는 논리다. 실제 □□시와 △△시의 아파트 값은 몇 달 전 보금자리지구로 지정됐다는 발표가 있은 후 급락했다. 다른 지역의 집값은 시장 상황에
+따라 등락을 거듭했지만 이들 지역은 유독 약세를 면치 못하고 있다는 조사 결과도
+나왔다. 자연훼손, 난개발, 교통체증 등도 보금자리주택을 반대하는 이유로 꼽힌다. 기존 대규모 개발사업에 비춰볼 때 아무리 좋은 마스터플랜을 세워도 환경이나 교통 측면에서 문제를 야기한 만큼 보금자리주택 건립에 반대한다는 것이다. (라) 16세기에 영국에서는 모직물 산업이 발달함에 따라 농경지를 방목지로 만들기 위해
+울타리를 치는 현상이 확산되었는데, 이를 1차 인클로저 운동이라 한다. 1515년에
+토머스 모어가 외교 사절로 파견되면서 저술한 “유토피아”는 다음과 같은 내용을
+담고 있다. 제1권에서는 히슬로다에우스를 통해 당시 영국의 인클로저 운동을 비판하면서 사유 재산의 취득에 대한 욕심과 자본주의적 영리 활동을 비난하였다. 인클로저 운동으로 농민들은 고향을 떠나 객지를 떠돌았고, 줄어든 농토는 곡물 값의
+폭등으로 이어졌다. 반면, 양모 산업의 번창으로 부자들은 엄청난 부를 축적하였는데, 이를 통해 한 국가가 생존에 필수적인 농업을 포기하고 교역 위주의 상공업으로 돌아설때 누가 그 과실을 책임지고 누구에게 큰 고통이 따르는지를 신랄하게 비판하였다.",3,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 3개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) The people don't really know what is good, and confuse it with what pleases or satisfies them.
+or what gives them satisfaction. So how can they decide what is really good for their city?
+How can they decide what's really good for their city? A public meeting would become a shouting match, with everyone shouting their own opinions and not listening to anyone else. Most issues that are important to the community, such as the economy or the military, are not easy to understand for laypeople. How can the opinion of a general and the opinion of a carpenter be of equal value when it comes to planning a defense strategy? Moreover, people change their opinions from moment to moment. The very idea that they enthusiastically defended yesterday, they dislike and anger today. It's very easy to win over
+the majority of the population is very easy. People are more susceptible to platitudes and demagogues than to deep thinkers who point out faults and problems. (b) In the state of nature, humans enjoyed a relatively peaceful life based on natural rights. However, because there were no common laws or judges, the rights of individuals to preserve their life, liberty, and property were not guaranteed in the state of nature.
+to secure their rights, the state was created. The state was created to protect life, liberty, and property.
+life, liberty, and property, and sovereignty rests with the people. If the government violates the life, liberty, and property of the people
+life, liberty, and property, the people have the right to resist and take back from the government the rights they have surrendered.
+government. (C) The government has decided to reduce the scale of business in □□ city and △△ city, which have been designated as secondary settlement zones, due to the strong opposition of residents.
+designated as the 00th settlement zone. The government finally took a step back when residents opposed to the project went to the extreme of recalling the mayor. The project, which aims to stabilize the housing of the homeless by supplying a large number of cheap small and medium-sized houses in the metropolitan area, is a good idea.
+The project has been met with opposition from residents everywhere. Experts analyze that this is because the formula of 'affordable housing = falling house prices' is spreading in the real estate market. The logic is that if a house is built that is cheaper than the market price, the price of the neighboring house
+the surrounding house prices are bound to fall. In fact, apartment prices in □□ and △△ cities plummeted after the announcement that they were designated as affordable housing zones a few months ago. While prices in other neighborhoods have fluctuated with market conditions
+market conditions, but these areas have been particularly weak.
+these areas. Other reasons cited for opposition to affordable housing include environmental degradation, overdevelopment, and traffic congestion. In the light of existing large-scale developments, no matter how good the master plan is, it has caused problems in terms of environment and traffic, so they oppose the construction of tiny houses. (d) In the 16th century, as the woolen industry developed in England, fencing of agricultural land into grazing land spread.
+fencing off agricultural land for grazing, known as the first enclosure movement. In 1515
+Thomas More wrote ""Utopia"" in 1515 while on a diplomatic mission.
+in 1515. Book I criticizes the enclosure movement in England through Hislodaeus, condemning the greed for private property acquisition and capitalist profit-making. The enclosure movement forced peasants to leave their homes and wander the countryside, and the shrinking farmland led to an explosion in the price of grain.
+grain prices skyrocketed. On the other hand, the wool industry flourished, enriching the wealthy, which led to a poignant critique of who is to blame and who suffers when a nation abandons agriculture, which is essential for survival, and turns to trade and commerce.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re three sets of questions and answers based on the new statements:
+
+Question 1
+What do people often confuse with what is good for their city, according to statement (a), and how does this lead to difficulties in decision-making?
+
+Answer: People often confuse what pleases or satisfies them with what is truly good for their city, which leads to a shouting match in public meetings where everyone shouts their own opinions without listening to others.
+
+Question 2
+What are the limitations of considering the opinion of a general and that of a carpenter when planning a defense strategy, as mentioned in statement (a), and how does this relate to the idea of people changing their opinions frequently?
+
+Answer: The limitations are that the general's expertise may not be relevant to the issue at hand, and the carpenter's opinion may not be valuable, which highlights the problem of laypeople making decisions on complex issues. This also relates to the fact that people often change their opinions quickly.
+
+Question 3
+How does statement (c) illustrate the idea that people are more susceptible to platitudes and demagogues than deep thinkers who point out faults and problems, as mentioned in statement (a)?
+
+Answer: The government's decision to reduce the scale of business in certain cities was met with strong opposition from residents, which highlights how easily people can be swayed by emotional appeals rather than logical arguments.
+
+Question 4
+What is the main idea behind the creation of the state, according to statement (b), and what are the consequences for individuals' rights if the government fails to protect them?
+
+Answer: The state was created to protect life, liberty, and property, and if the government fails to do so, individuals have the right to resist and take back their surrendered rights.
+
+Question 5
+How does the enclosure movement in England in the 16th century, as described in statement (d), relate to the idea of people being more susceptible to platitudes and demagogues than deep thinkers?
+
+Answer: The enclosure movement led to the forced eviction of peasants from their homes, which highlights how economic interests can be prioritized over human needs, illustrating the critique that people are often swayed by emotional appeals rather than logical arguments.
+
+Question 6
+What is the main difference between the positions presented in statements (a) and (b), regarding the relationship between what people think is good for their city and what is truly good?
+
+Answer: Statement (a) suggests that people's opinions on what is good for their city are often based on personal preferences, while statement (b) argues that people should prioritize the protection of life, liberty, and property.
+
+Question 7
+How do statements (c) and (d) illustrate the idea that people's opinions can be influenced by external factors such as market conditions or economic interests?
+
+Answer: The opposition to affordable housing in cities is driven by concerns about environmental degradation, overdevelopment, and traffic congestion, illustrating how external factors can influence people's opinions. Similarly, the enclosure movement in England was driven by economic interests, leading to the forced eviction of peasants from their homes.
+
+Question 8
+What is the relationship between the ideas presented in statements (a) and (d), regarding the nature of human relationships and the distribution of power?
+
+Answer: Both statements suggest that people are often swayed by emotional appeals rather than logical arguments, and that those with economic power can influence the opinions and actions of others.","['What do people often confuse with what is good for their city, according to statement (a), and how does this lead to difficulties in decision-making?', 'What are the limitations of considering the opinion of a general and that of a carpenter when planning a defense strategy, as mentioned in statement (a), and how does this relate to the idea of people changing their opinions frequently?', 'How does statement (c) illustrate the idea that people are more susceptible to platitudes and demagogues than deep thinkers who point out faults and problems, as mentioned in statement (a)?', ""What is the main idea behind the creation of the state, according to statement (b), and what are the consequences for individuals' rights if the government fails to protect them?"", 'How does the enclosure movement in England in the 16th century, as described in statement (d), relate to the idea of people being more susceptible to platitudes and demagogues than deep thinkers?', 'What is the main difference between the positions presented in statements (a) and (b), regarding the relationship between what people think is good for their city and what is truly good?', ""How do statements (c) and (d) illustrate the idea that people's opinions can be influenced by external factors such as market conditions or economic interests?"", 'What is the relationship between the ideas presented in statements (a) and (d), regarding the nature of human relationships and the distribution of power?']","['진술 (가)에 따르면, 사람들은 종종 자신의 도시에 좋은 것과 무엇을 혼동하며, 이로 인해 의사 결정에 어려움을 겪는 이유는 무엇입니까?', '제시문 (가)에서 언급한 바와 같이, 방어 전략을 계획할 때 장군의 의견과 목수의 의견을 고려하는 것의 한계는 무엇이며, 이는 사람들이 의견을 자주 바꾼다는 생각과 어떤 관련이 있습니까?', '제시문 (다)는 제시문 (가)에서 언급했듯이 사람들이 잘못과 문제를 지적하는 깊은 사상가들보다 미사여구와 선동가들에게 더 취약하다는 생각을 어떻게 설명하는가?', '제시문 (나)에 따르면 국가 창설의 주된 이념은 무엇이며, 정부가 개인의 권리를 보호하지 못하면 어떤 결과가 초래될 수 있습니까?', '16세기 영국에서 일어난 인클로저 운동은 진술 (라)에 묘사된 대로 사람들이 깊은 사상가들보다 미사여구와 선동가들에게 더 취약하다는 생각과 어떤 관련이 있습니까?', '사람들이 자신의 도시에 좋다고 생각하는 것과 진정으로 좋은 것 사이의 관계에 대해 (가)와 (나)에 제시된 입장 간의 주요 차이점은 무엇인가요?', '제시문 (다)와 (라)는 사람들의 의견이 시장 상황이나 경제적 이해관계와 같은 외부 요인에 의해 영향을 받을 수 있다는 생각을 어떻게 설명하나요?', '인간 관계의 본질과 권력 분배에 관한 제시문 (가)와 (라)에 제시된 생각들 사이의 관계는 무엇입니까?']"
+"(가) 허자(虛子)가 말했다. “천지에 생물 중에 오직 인간만이 귀합니다. 금수한테는 지혜가 없고 초목한테는 감각이 없으니까요. 또한 이들에게는 예의가 없습니다. 그러니 인간은 금수보다 귀한 존재이고, 초목은 금수보다 천한 존재이지요.” 실옹(實翁)은 고개를 들어 껄껄 웃더니 이렇게 말했다. “너는 정말 인간이로구나! 오륜(五倫)과 오사(五事)가 인간의 예의라면, 무리를 지어 다니면서 함께 먹이를 먹는 것은 금수의 예의이고 군락을 지어 가지 뻗는 건 초목의 예의이다. 인간의 입장에서 물(物)을 보면 인간이 귀하고 물이 천하지만, 물의 입장에서 인간을 보면 물이 귀하고 인간이 천하다. 그러나 하늘의 입장에서 보면 인간과 물은 균등하다. 무릇 대도(大道)를 해치는 것은 뽐내는 마음보다 더 심한 게 없다. 인간이 자기를 귀하게 여기고 물을 천하게 여김은
+뽐내는 마음의 근본이다. 너는 왜 하늘의 입장에서 물을 보지 않고 인간의 입장에서
+물을 보느냐?”
+(나) 1950년 네덜란드 축산업자들은 매우 부드러운 송아지 고기를 얻는 방법을 개발했다. 비결은 송아지를 매우 작게 개조한 우리 안에 가두고 사육하는 것이다. 먹이도 풀
+대신 비타민과 미네랄, 성장 촉진제를 첨가한 탈지분유를 만든 액체 사료를 사용했다. 송아지들은 이런 환경에서 16주를 산다. 갓 태어났을 때는 40kg 남짓하지만 이런 시스템에서 16주를 보내면 180kg까지 증가한다. 이렇게 생산한 송아지 고기는 야외에서 풀을 먹고 마음껏 뛰놀면서 성장한 송아지 고기보다 훨씬 비싼 가격에 팔린다. 근육이 발달하지 않아 고기가 질기지 않고 색깔도 연하기 때문이다.
+(다) ‘지속 가능한 발전’은 미래세대가 자신의 욕구를 충족시킬 수 있는 능력을 해치지
+않으면서도 현세대의 욕구를 충족하는 발전을 의미한다. ‘지속가능성’은 인간의 지속가능성, 사회의 지속가능성, 경제의 지속가능성, 더 나아가 생태적 지속가능성 등 다양한 차원에서 논의될 수 있으며, 이들은 상호 밀접하게 관련되어 있다. 생태적 지속가능성이란 개체들 사이 또는 개체와 자연 간의 상호 의존성이나 생명 간의 연대성과 같은 관계성의 지속을 의미하는데, 생태적 지속가능성이 확보되지 않는다면 인간도, 사회도, 경제도 지속할 수 없다는 것은 명백하다. (라) 람사르습지 도시는 람사르습지 인근에 위치하고, 습지 보전과 현명한 이용에 참여하는 도시나 마을을 의미한다. 람사르습지 인증은 습지의 훼손을 막아 개발로부터 자연과 인간을 보호하고 공존의 길을 모색하자는 의미를 담고 있으며, 지역과 세계가 힘을 모아, 지역 주민을 위한 지속 가능한 사회경제적 혜택의 증진을 목적으로 도입된
+제도다. ○○지역은 3년 전부터 람사르습지로 지정돼 있으나, 최근 인근지역의 개발계획으로 홍역을 치르고 있다. ○○시에서는 일대 부지에 1,000여 마리의 야생동물을
+사육하는 시설과 숙박시설을 짓는 사파리월드 개발을 추진하고 있으며, ○○시 정부는 이러한 개발은 ○○지역의 실업문제를 해결하고, 지역 경제가 살아날 것이며, 후손들도 지금보다는 훨씬 풍요로운 삶을 누릴 수 있을 것이라고 주장한다. 그러나 개발계획을 두고 지역 환경단체는 “람사르습지 도시로 지정한 취지와 정면으로 위배된다.”며 반발하고 있다.",4,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 4개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+""Question 4""
+""Answer 4""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) He Zi said. ""Of all the creatures in heaven and earth, only humans are precious. For animals have no wisdom, and plants have no sense, and they have no manners. Therefore, humans are more precious than animals, and animals are less precious than humans."" Shilong looked up, chuckled, and said, ""You are indeed a human! ""You are indeed a human being! If the Five Elements and the Five Laws are the manners of humans, then traveling in herds and feeding together is the manners of beasts, and spreading out in clusters is the manners of plants. From the perspective of humans, humans are precious and water is lowly, but from the perspective of water, humans are precious and humans are lowly. However, from the perspective of the heavens, humans and water are equal. There is nothing more harmful to the Great Dao than a proud heart. The fact that humans regard themselves as precious and water as lowly
+is the root of pride. Why do you look at water from a heavenly perspective and not from a human perspective?
+water from a human perspective?""
+(b) In 1950, Dutch livestock farmers developed a method of obtaining very tender veal. The trick is to keep the calves in very small modified cages. They don't eat grass.
+Instead, they used liquid feed made from skimmed milk powder with added vitamins, minerals, and growth promoters. The calves live 16 weeks in this environment. When they are born, they weigh around 40 kilograms, but after 16 weeks in this system, they can reach 180 kilograms. The meat from these calves is sold at a much higher price than that of calves raised outdoors, eating grass and running around. The meat is tougher and lighter in color due to the lack of muscle development.
+(c) ""Sustainable development"" means meeting the needs of the present without compromising the ability of future generations to meet their own needs.
+development that meets the needs of the present without compromising the ability of future generations to meet their own needs. Sustainability can be discussed at different levels, including human sustainability, social sustainability, economic sustainability, and ecological sustainability, which are all closely related. Ecological sustainability refers to the continuation of relationships, such as interdependence between individuals or between individuals and nature, or solidarity among life, and it is clear that without ecological sustainability, neither humans nor societies nor economies can continue. (d) Ramsar City means a city or town located in the vicinity of a Ramsar site and participating in the conservation and wise use of the site. Ramsar Site certification is a global and local initiative to protect wetlands from degradation and to promote sustainable socio-economic benefits for local people.
+for local people. The ○○ area has been designated as a Ramsar site for three years, but has recently suffered from measles due to a development plan in the neighboring area. The city of ○○ has built a wildlife breeding facility and accommodation for more than 1,000 animals on the site.
+The city government claims that the development will solve the unemployment problem in the area, revitalize the local economy, and provide a much richer life for future generations. However, local environmental organizations are opposed to the development, saying it ""directly contradicts the purpose of the city's designation as a Ramsar site.""
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","s the generated set of questions and answers:
+
+Question 1
+Please explain how the idea of human preciousness presented in statement (a) relates to the concept of sustainable development mentioned in statement (c).
+
+Answer 1
+The idea of human preciousness in statement (a) can be seen as conflicting with the principles of ecological sustainability discussed in statement (c), as it emphasizes human superiority over other living beings and the environment.
+
+Question 2
+Based on statements (b) and (d), compare the treatment of calves in veal farming and Ramsar City's wildlife breeding facility. Please explain any similarities or differences between these two approaches.
+
+Answer 2
+Both veal farming and the wildlife breeding facility in Ramsar City involve confining animals in small spaces, but they have different motivations and outcomes. Veal farming prioritizes profit over animal welfare, while the wildlife breeding facility claims to prioritize ecological sustainability and local economic development.
+
+Question 3
+Please discuss how statement (a) might relate to the concept of pride mentioned in the last sentence of statement (c).
+
+Answer 3
+Statement (a) emphasizes human superiority and pride, which can be seen as a form of self-pride that is detrimental to the Great Dao. Similarly, the concept of sustainable development aims to reduce pride and prioritize interdependence with nature.
+
+Question 4
+Based on statements (b) and (c), explain how the idea of meeting the needs of the present without compromising future generations' needs relates to the treatment of animals in veal farming and wildlife breeding facilities.
+
+Answer 4
+The concept of sustainable development emphasizes meeting the needs of the present without harming future generations, but veal farming and wildlife breeding facilities prioritize short-term economic gains over long-term ecological sustainability.","['Please explain how the idea of human preciousness presented in statement (a) relates to the concept of sustainable development mentioned in statement (c).', ""Based on statements (b) and (d), compare the treatment of calves in veal farming and Ramsar City's wildlife breeding facility. Please explain any similarities or differences between these two approaches."", 'Please discuss how statement (a) might relate to the concept of pride mentioned in the last sentence of statement (c).', ""Based on statements (b) and (c), explain how the idea of meeting the needs of the present without compromising future generations' needs relates to the treatment of animals in veal farming and wildlife breeding facilities.""]","['제시문 (가)에 제시된 인간의 소중함에 대한 개념이 제시문 (다)에 언급된 지속 가능한 발전의 개념과 어떤 관련이 있는지 설명하십시오.', '제시문 (나)와 (라)를 바탕으로 송아지 농장과 람사르 시의 야생동물 사육 시설의 송아지 처우를 비교하십시오. 이 두 접근법 사이의 유사점 또는 차이점을 설명하십시오.', '제시문 (가)가 제시문 (다)의 마지막 문장에 언급된 자부심의 개념과 어떻게 관련될 수 있는지 논의하십시오.', '제시문 (나)와 (다)를 바탕으로, 미래 세대의 필요를 손상시키지 않으면서 현재의 필요를 충족시킨다는 생각이 송아지 농장 및 야생동물 사육 시설의 동물 처우와 어떤 관련이 있는지 설명하십시오.']"
+"(가) 보편주의 윤리에 따른다면, 보편적인 가치를 바탕으로 현실의 모습을 수용하거나
+비판하는 삶의 자세를 지니게 될 것이다. 보편주의 윤리를 바탕으로 한 삶의 자세는
+지나치게 다원화된 사회가 주는 혼란을 극복하는 데에 도움을 줄 수 있지만, 다양한
+삶의 방식을 획일적으로 평가할 수 있다는 단점이 있다. 반면에 상대주의 윤리는 다양성을 무조건적으로 옹호할 경우 윤리적 회의에 빠질 위험을 갖고 있지만, 현실의
+다양한 모습과 가치를 인정하고 수용하는 삶의 자세를 지니도록 돕는다. 이런 관점에서 상대주의 윤리는 서로 다른 문화의 차이를 인정하며 그 의미와 배경을 이해하려는 문화 상대주의적 태도와 연결될 수 있다. 특히 전 세계적으로는 물론, 한 사회
+내에서도 다양한 문화 간 교류가 빈번한 현대 사회에서는 다른 문화, 인종, 민족, 계층의 사람을 대할 때 기본적으로 문화 상대주의적 태도를 견지하는 것이 바람직하다. 또한 ㉠ 자신의 관점에서 다른 문화를 비하하는 자문화중심주의와 다른 문화의
+관점에서 자신의 문화를 비하하는 문화 사대주의는 피해야 할 태도이다. (나) 중국에서 여자아이가 태어나면 발의 발육이 시작되는 때부터 긴 천으로 발을 단단히 묶었던 것이 전족의 관습이다. 이와 같이 하는 이유는 인위적으로 발육을 멈추게
+하여 발의 모양을 작고 뾰족하게 변형시키기 위해서이다. 전족의 모양이 연꽃과 비슷한데다가 중국에서 ‘귀함’을 표현할 때 ‘金’자를 붙이기 좋아하는 관습과 풍속에 따라 ‘금련(金蓮)’이라고도 부른다. 원나라를 세운 몽고인도 한족 여자의 전족을 싫어하지 않아, 남송에 비해 오히려 더 널리 보급되기도 하였다. 명나라 때는 귀족 부인의
+상징이었기 때문에 황궁의 여자들은 반드시 전족을 해야만 했다. (다) 미국 문화의 특징은 각 이주민의 다양성으로 이루어진 결과이다. 이러한 문화적 다양성은 여러 가지 사회 문제의 원인이 되기도 한다. 미국 도시 내에서 인종별· 민족별·출신 국가별로 이민자 집단 간 경제적 경쟁이 발생하고, 문화적 차이에 따른 거주
+지역 분리 현상이 두드러지게 나타난다. 특히 최근에 빠르게 증가하고 있는 중앙아메리카 및 남아메리카의 히스패닉계 이주민은 흑인 집단과 더불어 새로운 계층을
+구성하고 있다. 이들은 언어와 문화적 전통을 고수하려는 경향이 강해 미국의 정치와 경제, 문화 등 사회 전반에 커다란 영향을 미치고 있다. (라) 문화적 차이 때문에 경제 발전에 차이가 생긴다는 견해는 오랫동안 전해져 온 것인데, 그 요지는 분명하다. 문화가 다르면 사람들이 가진 가치관이 달라지고, 가치관이 다르면 행동 양식이 달라진다. 그런데 행동 양식은 경제 발전에 도움이 되는 것도 있고, 그렇지 않은 것도 있다. 어떤 나라의 문화가 경제 발전에 유리한 행동 양식을 낳을
+경우 이 나라는 다른 나라들보다 경제적으로 좋은 성과를 올리게 된다. 새무얼 헌팅턴은 이런 견해를 간결하게 설명한다. 1960년대에 경제 발전의 수준이 비슷했던 한국과 가나 두 나라의 경제적인 차이점을 설명하면서, “많은 요소들이 역할을 한 것은틀림없는 사실이지만 ... 문화야말로 이 설명에서 가장 중요한 부분이 되어야 한다. 한국인들은 검약, 투자, 근면, 교육, 조직, 규율을 소중히 여겼다. 가나 사람들은 다른
+가치관을 가지고 있었다. 다시 말해서 문화가 중요한것이다.” 라고 했다.",5,"
+당신은 대학 입시의 논술과 면접 학원을 운영하고 있는 선생님입니다. 당신의 주 업무는 제시문으로부터 새로운 질문을 생성하는 것입니다.
+당신은 새로운 제시문이 주어지면, 제시문들의 내용을 파악한 후 이와 관련된 질문과 답변을 생성합니다.
+또한 질문들은 각 제시문 간의 관계성을 고려해 서로 비교하거나, 연관성을 물어봐야 합니다.
+이때, 제시문 [가], 제시문 [나] 등의 단어들이 질문에 등장하고, 이들 간의 관계성 등을 물어봐야 합니다.
+제시문의 전반적인 내용에 대해 골고루 질문을 생성하세요. 질문들은 특정 내용만 다루는 것이 아닌, 제시문 전체를 구체적으로 다뤄야 합니다.
+","다음 제시문을 보고, 질문과 답변 세트를 5개 생성하라.
+
+    예를 들어 다음과 같은 제시문 3개가 있다.
+
+    ###
+    [제시문 (가)] : 진실을 추구하지만 이야기라는 틀을 벗어날 수 없는 혼종 학문인 역사학은 인문학의 경계에 위치하면서 다른 학문보다 더 어렵기도 하고 더 쉽기도 하다. 역사가들은 원하는 정보 모두를 획득할 때까지 사료를 끊임없이 파헤치고, '사실'을 다루는 자신들의 깊이를 앞세워 여타 학문의 동료들을 괴롭히는 콧대 높은 경험주의자들이다. 이와 동시에 역사책은 흔히 이야기를 중심으로 전개되며, 가장 성공적인 역사서들은 대체로 훌륭한 소설의 속성을 일정하게 갖고 있다.
+    역사학의 본질적 혼종성은 과거를 재구성하는 데 있어서 사실성과 허구성 사이의 경계에 관한 논쟁의 핵심적 이유이다.
+
+    [제시문 (나)] : 크리스토퍼 브라우닝(Christopher Browning)은 1942~1943년에 걸쳐 약 38,000명의 유대인 학살 명령을 수행한 독일 101예비경찰대의 재판 기록을 통해 ‘평범한 사람들’이 학살에 가담했던 이유를 설명한다. 유대인을 죽이라는 명령을 받고 당황한 대원들에게 상관은 나이가 좀 더 많은 사람들은 임무를 수행하지 못할 것 같으면 빠져도 좋다고 말했지만, 선택의 가능성에도 불구하고 80~90%의 대원들이 대량 학살에 가담했다. 브라우닝은 사회적 관계로 인해 나약한 인간이 부당한 일을 행할 수 있다고 보았다. 순응주의, 권위에 대한 복종, 임무를 거부할 때 동료들로부터 따돌림을 당할지도 모른다는 두려움이 학살 가담의 결정적 원인이라는 것이다. 브라우닝은 무엇이 보통 사람들을 그토록 잔혹한 범죄에 가담하도록 이끌었는가를 이해하려 했던 것이고 그의 결론은 집단적 순응성의 압도적인 영향이었다.
+
+    [제시문 (다)] : 대니얼 골드하겐(Daniel Goldhagen)은 브라우닝과 동일한 사료를 검토하고 정반대 결론을 내렸다. 그의 결론은 101예비경찰대의 압도적 다수가 동료들의 압력, 복종, 혹은 자신들의 경력 때문에 학살에 가담했던 것이 아니라, 섬뜩할 정도로 냉담하고 잔인한 행동을 묘사한 기록들에서 드러나듯 유대인 학살의 적극적 욕망을 가지고 행동했기 때문이라는 것이다. 골드하겐은, 학살 가담이 내키지 않았고 자신들의 행동을 혐오했다는 대원들의 진술이 자기 변호에 불과하며, 그들은 ‘평범한 보통 사람들’이 아니라 ‘비정상적인 정치문화의 보통 사람들’이라고 보았다. 그의 명제는 단순하고 명확하다. “독일인의 반유대주의적 신념이 홀로코스트를 유발한 핵심 동인이다.” 골드하겐은 사회적 관계에 초점을 맞추기보다는 반유대주의라는 당시 독일 사회의 특수성을 문제시했다. 그의 자명한 주장은 앞선 역사가들과 달랐지만, 상당한 대중적 찬사를 받았다.
+    ###
+
+    이 제시문 세트에서 출제된 문제는 다음과 같다.
+
+    1. (가)에서 말한 역사학에서의 허구성을 구체적으로 설명하고, (나)와 (다)에서 발견되는 허구적 요소가 각각 무엇인지 설명하시오.
+    2. (가)에서 말한 '혼종성’이 다른 학문 분야에서 어떻게 나타날 수 있는지 예를 들어 설명하시오.
+
+    이처럼 새로운 제시문에 대해 질문을 생성하면 된다.
+    이때 생성할 질문들은 예시 질문들과 유사한 형태이어야 한다.
+    다음은 예시 질문들이다.
+
+    [""(나), (다), (라) 각각에 근거하여 (가)에 나타난 정부의 물가 변동 파악 방식의 한계점을 설명하시오.""]
+    [""(가) 또는 (나)에서 문제가 된 상황과 유사한 다른 사례를 제시하고 그 이유를 설명하시오.""]
+    [""(가)와 (나)에 나타난 독자에 대한 공통된 이해 방식을 (다)의 맥락에서 평가하시오.""]
+    [""제시문 [다]를 기반으로, [가]와 [나]의 시선 사이의 관계와 그 영향에 대해 논의하시오.""]
+    [""(가)와 (나)의 밑줄 친 사례에서 관찰되는 문제점의 공통점과 차이점을 구체적으로 설명하시오.]
+    [""독자와 저자(혹은 작가)의 관계에 관해 (가)와 (나)에 제시된 입장을 비교하시오.""]
+    [""(다)의 화자를 만났을 때, (가)와 (나)의 글쓴이가 자신의 입장을 각각 어떻게 변호할지 논하시오.""]
+    [""제시문 [가], [나], [다]를 종합하여, 현대 사회에서의 인간관계의 핵심 특징을 설명하시오.""]
+
+    이처럼 모든 질문은 반드시 ""~하시오.""처럼 명령 어조이어야 한다. 반드시 이를 지켜야 한다.
+
+    주의점은 다음과 같다.
+
+    ###
+    1. 다른 불필요한 문장은 절대로 생성하지 마시오. 오직 질문과 답변만 생성하시오.
+    2. 질문은 1~2문장으로, 간결해야 한다.
+    3. 각 질문들은 서로 다른 내용으로, 겹치지 않아야 한다.
+    4. 모든 질문은 반드시 ""~하시오.""의 명령조 형식으로 끝나야 한다. 예를 들어 ""제시문 [가]와 [나]에 기반하여 [다]에 대한 생각을 설명하시오.""와 같은 형탱이어야 한다.
+    5. 또한 질문은 최대한 자연스러운 말투이어야 한다.
+    6. 지정한 질문과 답변의 세트 개수는, 제시문 전체에 대해서 적용되는 것이다.
+    7. 마지막으로 질문에는, 답변에 대한 내용이 절대로 나타나서는 안 된다. 즉, 질문은 구체적인 내용을 물어보는 것이 아닌 포괄적인 질문이어야 한다.
+    ###
+
+
+    또한 생성 형식은
+    
+""Question 1""
+""Answer 1""
+""Question 2""
+""Answer 2""
+""Question 3""
+""Answer 3""
+""Question 4""
+""Answer 4""
+""Question 5""
+""Answer 5""
+
+    으로 해야 한다.
+    반드시 이 생성 형식을 지켜야 한다.
+
+
+    새로운 제시문은 다음과 같다.
+
+    ###
+    (a) A universalist ethic is one that accepts or criticizes the way things are based on universal values.
+or criticize reality based on universal values. A universalist ethic can help overcome the confusion of an overly pluralistic society
+can help us overcome the confusion of an overly pluralistic society, but it has the disadvantage that it can lead to a uniform evaluation of various
+It has the disadvantage that it can lead to a one-size-fits-all evaluation of different ways of life. Relativist ethics, on the other hand, runs the risk of falling into ethical skepticism if it unconditionally advocates for diversity, but it can also help us recognize and accept the
+It helps us to recognize and accept the diversity of life and values. In this sense, relativist ethics can be linked to a cultural relativist attitude that recognizes the differences between different cultures and seeks to understand their meaning and context. This is especially true in a world where interaction between different cultures, both globally and within a society
+In the modern world, where intercultural interactions are frequent, both globally and within a society, it is desirable to have an inherently cultural relativistic attitude when dealing with people from different cultures, races, ethnicities, and classes. In addition, it is important to distinguish between ㉠ ethnocentrism, which is the denigration of other cultures from one's own point of view, and
+(b) In China, when a baby girl is born, her feet are tightly tied with a long cloth from the beginning of her development. The reason for this is to artificially stunt the growth of the feet.
+to artificially stunt the growth of the feet and make them smaller and more pointed. The forefoot is also known as the ""golden lotus"" due to its similarity to a lotus flower and the Chinese custom of adding the character ""gold"" to express ""preciousness"". The Mongols, who founded the Yuan Dynasty, were not averse to Han Chinese women's full-length hair, so it became more widespread than in Southern China. During the Ming Dynasty, it was a symbol of a noblewoman's
+(c) American culture is characterized by the diversity of its immigrants. This cultural diversity has contributed to many social problems. Economic competition among immigrant groups by race, ethnicity, and country of origin within U.S. cities, as well as neighborhood segregation based on cultural differences.
+In particular, the recent and rapidly growing Hispanic immigrant population from Central and South America is forming a new stratum alongside the Black population.
+alongside blacks. Their tendency to retain their language and cultural traditions is having a profound impact on American politics, economy, culture, and society in general. (d) The idea that cultural differences lead to differences in economic development has been around for a long time, and the point is clear. Different cultures lead to different values, and different values lead to different behaviors. Some behaviors are conducive to economic development, while others are not. If a country's culture produces behaviors that are favorable to economic development
+If a country's culture produces behaviors that favor economic development, it will perform better economically than other countries. Samuel Huntington succinctly explains this view. In explaining the economic differences between South Korea and Ghana, two countries with similar levels of economic development in the 1960s, he writes, ""It is undisputed that many factors played a role... but culture must be the most important part of the explanation. Koreans valued frugality, investment, hard work, education, organization, and discipline. Ghanaians had different
+different values. In other words, culture matters."" He said.
+    ###
+
+    이제 질문과 답변 세트를 생성하라. 질문과 답변만 생성하고, 다른 문장은 절대로 생성하지 마시오.
+    ","re the generated questions and answers:
+
+Question 1
+Please describe the main advantage of a universalist ethic.
+
+Answer 1
+It can help overcome the confusion of an overly pluralistic society.
+
+Question 2
+How does relativist ethics differ from universalist ethics?
+
+Answer 2
+Relativist ethics runs the risk of falling into ethical skepticism, whereas universalist ethics may lead to a one-size-fits-all evaluation of different ways of life.
+
+Question 3
+What is the main disadvantage of universalist ethics?
+
+Answer 3
+It can lead to a uniform evaluation of various ways of life.
+
+Question 4
+How does relativist ethics help us recognize and accept diversity?
+
+Answer 4
+Relativist ethics helps us recognize and accept the diversity of life and values by recognizing the differences between different cultures and seeking to understand their meaning and context.
+
+Question 5
+What is the importance of cultural relativism in today's globalized society?
+
+Answer 5
+It is important to have an inherently cultural relativistic attitude when dealing with people from different cultures, races, ethnicities, and classes due to frequent intercultural interactions globally and within a society.","['Please describe the main advantage of a universalist ethic.', 'How does relativist ethics differ from universalist ethics?', 'What is the main disadvantage of universalist ethics?', 'How does relativist ethics help us recognize and accept diversity?', ""What is the importance of cultural relativism in today's globalized society?""]","['보편주의 윤리의 주요 이점에 대해 설명해 주세요.', '상대주의 윤리는 보편주의 윤리와 어떻게 다른가요?', '보편주의 윤리의 가장 큰 단점은 무엇인가요?', '상대주의 윤리는 다양성을 인정하고 수용하는 데 어떻게 도움이 될까요?', '오늘날의 글로벌화된 사회에서 문화적 상대주의의 중요성은 무엇인가요?']"
