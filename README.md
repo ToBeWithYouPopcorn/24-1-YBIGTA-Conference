@@ -1,1 +1,16 @@
-# 24-1-YBIGTA-Conference
+# 24-1-YBIGTA-Conference![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0001](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/52b1ff34-31c9-4bff-b1b4-5d131a07bad1)
+!
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0002](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/3fa42746-6948-4ac2-93b9-e7e02cd64ccd)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0003](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/a20b52c9-1451-4745-ac56-1acc46b560b9)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0004](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/f039473c-5862-4ccc-ae29-7feff13524cb)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0005](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/f120bad6-05ca-41af-96ea-ad235f7d9eb3)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0006](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/ef18fdda-7545-4710-9f66-b3dd8d95447c)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0007](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/c96226a3-d7c9-4b9a-ac82-f2ff824a2b46)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0008](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/99ac1a4f-e451-4c33-9aed-f08433914c66)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0009](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/6a821ee3-7e25-4493-b781-341607b837e0)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0010](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/0f4fda5b-4a69-4560-8a94-2df2843e0b20)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0011](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/132ba283-cd0b-4305-b7d4-8e6329541c18)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0012](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/1e857157-a05e-44b5-95ec-c77083a6e3e2)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0013](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/46e3d69c-41f4-495a-9e08-05036397cd72)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0014](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/bd957770-c58c-4805-9c84-0e885b10b213)
+![24YBIGTACONFERENCE_대치동게섯거라_주석_0628_page-0015](https://github.com/ToBeWithYouPopcorn/24-1-YBIGTA-Conference/assets/154731662/e9727d40-16b1-4eeb-a05c-40a80da830cb)
